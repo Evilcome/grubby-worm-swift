@@ -11,6 +11,8 @@
 		B004CB641AD2C37200DAAF0B /* Worm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004CB631AD2C37200DAAF0B /* Worm.swift */; };
 		B004CB661AD2C42000DAAF0B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004CB651AD2C42000DAAF0B /* Playground.swift */; };
 		B004CB6A1AD2C45100DAAF0B /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004CB691AD2C45100DAAF0B /* Trigger.swift */; };
+		B004CB6D1AD2C95B00DAAF0B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B004CB6C1AD2C95B00DAAF0B /* Cartfile */; };
+		B004CB6F1AD2CB3200DAAF0B /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B004CB6E1AD2CB3200DAAF0B /* LTMorphingLabel.framework */; };
 		B0C408601AD2BD61002745FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4085F1AD2BD61002745FD /* AppDelegate.swift */; };
 		B0C408621AD2BD61002745FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C408611AD2BD61002745FD /* ViewController.swift */; };
 		B0C408651AD2BD61002745FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C408631AD2BD61002745FD /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		B004CB631AD2C37200DAAF0B /* Worm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worm.swift; sourceTree = "<group>"; };
 		B004CB651AD2C42000DAAF0B /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		B004CB691AD2C45100DAAF0B /* Trigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
+		B004CB6C1AD2C95B00DAAF0B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		B004CB6E1AD2CB3200DAAF0B /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
 		B0C4085A1AD2BD61002745FD /* grubby-worm-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grubby-worm-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C4085E1AD2BD61002745FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C4085F1AD2BD61002745FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B004CB6F1AD2CB3200DAAF0B /* LTMorphingLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,7 @@
 		B0C408511AD2BD61002745FD = {
 			isa = PBXGroup;
 			children = (
+				B004CB6E1AD2CB3200DAAF0B /* LTMorphingLabel.framework */,
 				B0C4085C1AD2BD61002745FD /* grubby-worm-swift */,
 				B0C408721AD2BD61002745FD /* grubby-worm-swiftTests */,
 				B0C4085B1AD2BD61002745FD /* Products */,
@@ -133,6 +139,7 @@
 		B0C4085D1AD2BD61002745FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B004CB6C1AD2C95B00DAAF0B /* Cartfile */,
 				B0C408681AD2BD61002745FD /* LaunchScreen.xib */,
 				B0C4085E1AD2BD61002745FD /* Info.plist */,
 			);
@@ -166,6 +173,7 @@
 				B0C408561AD2BD61002745FD /* Sources */,
 				B0C408571AD2BD61002745FD /* Frameworks */,
 				B0C408581AD2BD61002745FD /* Resources */,
+				B004CB701AD2CB4800DAAF0B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -238,6 +246,7 @@
 			files = (
 				B0C408651AD2BD61002745FD /* Main.storyboard in Resources */,
 				B0C4086A1AD2BD61002745FD /* LaunchScreen.xib in Resources */,
+				B004CB6D1AD2C95B00DAAF0B /* Cartfile in Resources */,
 				B0C408671AD2BD61002745FD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +259,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B004CB701AD2CB4800DAAF0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/LTMorphingLabel.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0C408561AD2BD61002745FD /* Sources */ = {
@@ -384,6 +410,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +424,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
