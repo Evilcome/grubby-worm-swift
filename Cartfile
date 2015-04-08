@@ -1,2 +1,8 @@
-github "duemunk/Async"
+# still some error when doing build
+# github "duemunk/Async"
+
+# special uilabel
 github "lexrus/LTMorphingLabel"
+
+# 
+
