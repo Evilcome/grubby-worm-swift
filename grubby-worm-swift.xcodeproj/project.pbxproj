@@ -18,6 +18,9 @@
 		B0C408671AD2BD61002745FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C408661AD2BD61002745FD /* Images.xcassets */; };
 		B0C4086A1AD2BD61002745FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C408681AD2BD61002745FD /* LaunchScreen.xib */; };
 		B0C408761AD2BD61002745FD /* grubby_worm_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C408751AD2BD61002745FD /* grubby_worm_swiftTests.swift */; };
+		B0DC317D1AD8ED1300806AF5 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DC317C1AD8ED1300806AF5 /* LTMorphingLabel.framework */; };
+		B0DC31801AD8F16000806AF5 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = B0DC317F1AD8F16000806AF5 /* Cartfile.resolved */; };
+		B0DC31841AD8F53B00806AF5 /* Stiff Staff.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0DC31831AD8F53B00806AF5 /* Stiff Staff.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		B0C4086F1AD2BD61002745FD /* grubby-worm-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grubby-worm-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C408741AD2BD61002745FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C408751AD2BD61002745FD /* grubby_worm_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grubby_worm_swiftTests.swift; sourceTree = "<group>"; };
+		B0DC317C1AD8ED1300806AF5 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = ../Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
+		B0DC317F1AD8F16000806AF5 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
+		B0DC31831AD8F53B00806AF5 /* Stiff Staff.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stiff Staff.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DC317D1AD8ED1300806AF5 /* LTMorphingLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +111,7 @@
 		B0C408511AD2BD61002745FD = {
 			isa = PBXGroup;
 			children = (
+				B0DC31831AD8F53B00806AF5 /* Stiff Staff.otf */,
 				B0C4085C1AD2BD61002745FD /* grubby-worm-swift */,
 				B0C408721AD2BD61002745FD /* grubby-worm-swiftTests */,
 				B0C4085B1AD2BD61002745FD /* Products */,
@@ -122,6 +130,7 @@
 		B0C4085C1AD2BD61002745FD /* grubby-worm-swift */ = {
 			isa = PBXGroup;
 			children = (
+				B0DC317E1AD8ED2600806AF5 /* framework */,
 				B004CB5D1AD2BF7400DAAF0B /* base */,
 				B0C4085F1AD2BD61002745FD /* AppDelegate.swift */,
 				B0C408611AD2BD61002745FD /* ViewController.swift */,
@@ -136,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				B004CB6C1AD2C95B00DAAF0B /* Cartfile */,
+				B0DC317F1AD8F16000806AF5 /* Cartfile.resolved */,
 				B0C408681AD2BD61002745FD /* LaunchScreen.xib */,
 				B0C4085E1AD2BD61002745FD /* Info.plist */,
 			);
@@ -157,6 +167,14 @@
 				B0C408741AD2BD61002745FD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0DC317E1AD8ED2600806AF5 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				B0DC317C1AD8ED1300806AF5 /* LTMorphingLabel.framework */,
+			);
+			name = framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,9 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DC31841AD8F53B00806AF5 /* Stiff Staff.otf in Resources */,
 				B0C408651AD2BD61002745FD /* Main.storyboard in Resources */,
 				B0C4086A1AD2BD61002745FD /* LaunchScreen.xib in Resources */,
 				B004CB6D1AD2C95B00DAAF0B /* Cartfile in Resources */,
+				B0DC31801AD8F16000806AF5 /* Cartfile.resolved in Resources */,
 				B0C408671AD2BD61002745FD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
