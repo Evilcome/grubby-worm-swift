@@ -11,7 +11,7 @@ import SpriteKit
 class Playground : SKNode {
     
     class func countGrid(size: CGSize) -> GridSize {
-        var gridSize = GridSize(row: 100, col: 100)
+        var gridSize = GridSize(row: 10, col: 30)
         
         return gridSize
     }
@@ -33,6 +33,12 @@ class Playground : SKNode {
                 let y = Constants.split * (Float(j)+1) + Constants.bigness * (Float(j)+0.5)
                 
                 base.position = CGPointMake(CGFloat(x), CGFloat(y))
+                
+                base.xScale = 0.4
+                base.yScale = 0.4
+                let appear = SKAction.scaleTo(1.0, duration: Double(Float(arc4random()) / Float(UINT32_MAX) * 5))
+                
+                base.runAction(appear)
                 
                 self.addChild(base)
             }

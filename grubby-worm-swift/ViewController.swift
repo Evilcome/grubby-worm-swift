@@ -59,13 +59,13 @@ class ViewController: UIViewController {
         if let playground = Playground(size: skView.frame.size) {
             skScene.addChild(playground)
             
-            let fullRotation = CGFloat(M_PI * 2)
-            var anim = SKAction.rotateByAngle(fullRotation, duration: 1)
-            anim = SKAction.repeatActionForever(anim)
-            
-//            playground.position = CGPointMake(CGRectGetMidX(skView.frame), CGRectGetMidY(skView.frame))
-            
-            playground.runAction(anim)
+//            let fullRotation = CGFloat(M_PI * 2)
+//            var anim = SKAction.rotateByAngle(fullRotation, duration: 1)
+//            anim = SKAction.repeatActionForever(anim)
+//            
+////            playground.position = CGPointMake(CGRectGetMidX(skView.frame), CGRectGetMidY(skView.frame))
+//            
+//            playground.runAction(anim)
         }
         
         
