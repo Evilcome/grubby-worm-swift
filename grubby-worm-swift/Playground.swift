@@ -6,8 +6,41 @@
 //  Copyright (c) 2015年 Wayne. All rights reserved.
 //
 
-import Foundation
+import SpriteKit
 
-class Playground {
+class Playground : SKNode {
     
+    class func countGrid(size: CGSize) -> GridSize {
+        var gridSize = GridSize(row: 100, col: 100)
+        
+        return gridSize
+    }
+    
+    init?(size: CGSize) {
+        super.init()
+        
+        let gridSize = Playground.countGrid(size)
+        
+        if(gridSize.row == 0 || gridSize.col == 0) {
+            return nil
+        }
+        
+        for var i = 0; i < gridSize.row; i++ {
+            for var j = 0; j < gridSize.col; j++ {
+                let base = SKSpriteNode(imageNamed: "base")
+                
+                let x = Constants.split * (Float(i)+1) + Constants.bigness * (Float(i)+0.5)
+                let y = Constants.split * (Float(j)+1) + Constants.bigness * (Float(j)+0.5)
+                
+                base.position = CGPointMake(CGFloat(x), CGFloat(y))
+                
+                self.addChild(base)
+            }
+        }
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
 }
