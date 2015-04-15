@@ -7,63 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B004CB621AD2C07000DAAF0B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004CB611AD2C07000DAAF0B /* Common.swift */; };
-		B004CB641AD2C37200DAAF0B /* Worm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004CB631AD2C37200DAAF0B /* Worm.swift */; };
-		B004CB661AD2C42000DAAF0B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004CB651AD2C42000DAAF0B /* Playground.swift */; };
-		B004CB6A1AD2C45100DAAF0B /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004CB691AD2C45100DAAF0B /* Trigger.swift */; };
-		B004CB6D1AD2C95B00DAAF0B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B004CB6C1AD2C95B00DAAF0B /* Cartfile */; };
-		B0C408601AD2BD61002745FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4085F1AD2BD61002745FD /* AppDelegate.swift */; };
-		B0C408621AD2BD61002745FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C408611AD2BD61002745FD /* ViewController.swift */; };
-		B0C408651AD2BD61002745FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C408631AD2BD61002745FD /* Main.storyboard */; };
-		B0C408671AD2BD61002745FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C408661AD2BD61002745FD /* Images.xcassets */; };
-		B0C4086A1AD2BD61002745FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C408681AD2BD61002745FD /* LaunchScreen.xib */; };
-		B0C408761AD2BD61002745FD /* grubby_worm_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C408751AD2BD61002745FD /* grubby_worm_swiftTests.swift */; };
-		B0DC317D1AD8ED1300806AF5 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DC317C1AD8ED1300806AF5 /* LTMorphingLabel.framework */; };
-		B0DC31801AD8F16000806AF5 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = B0DC317F1AD8F16000806AF5 /* Cartfile.resolved */; };
-		B0DC31841AD8F53B00806AF5 /* Stiff Staff.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0DC31831AD8F53B00806AF5 /* Stiff Staff.otf */; };
+		B00222CD1ADEB97E0077DDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222CC1ADEB97E0077DDF1 /* AppDelegate.swift */; };
+		B00222CF1ADEB97E0077DDF1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B00222CE1ADEB97E0077DDF1 /* GameScene.sks */; };
+		B00222D11ADEB97E0077DDF1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222D01ADEB97E0077DDF1 /* GameScene.swift */; };
+		B00222D31ADEB97E0077DDF1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222D21ADEB97E0077DDF1 /* GameViewController.swift */; };
+		B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00222D41ADEB97E0077DDF1 /* Main.storyboard */; };
+		B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00222D71ADEB97E0077DDF1 /* Images.xcassets */; };
+		B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */; };
+		B00222E71ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0C408701AD2BD61002745FD /* PBXContainerItemProxy */ = {
+		B00222E11ADEB97F0077DDF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B0C408521AD2BD61002745FD /* Project object */;
+			containerPortal = B00222BF1ADEB97E0077DDF1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B0C408591AD2BD61002745FD;
+			remoteGlobalIDString = B00222C61ADEB97E0077DDF1;
 			remoteInfo = "grubby-worm-swift";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B004CB611AD2C07000DAAF0B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		B004CB631AD2C37200DAAF0B /* Worm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worm.swift; sourceTree = "<group>"; };
-		B004CB651AD2C42000DAAF0B /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
-		B004CB691AD2C45100DAAF0B /* Trigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
-		B004CB6C1AD2C95B00DAAF0B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
-		B0C4085A1AD2BD61002745FD /* grubby-worm-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grubby-worm-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0C4085E1AD2BD61002745FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0C4085F1AD2BD61002745FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0C408611AD2BD61002745FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B0C408641AD2BD61002745FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B0C408661AD2BD61002745FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B0C408691AD2BD61002745FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B0C4086F1AD2BD61002745FD /* grubby-worm-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grubby-worm-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0C408741AD2BD61002745FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0C408751AD2BD61002745FD /* grubby_worm_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grubby_worm_swiftTests.swift; sourceTree = "<group>"; };
-		B0DC317C1AD8ED1300806AF5 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = ../Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
-		B0DC317F1AD8F16000806AF5 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
-		B0DC31831AD8F53B00806AF5 /* Stiff Staff.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stiff Staff.otf"; sourceTree = "<group>"; };
+		B00222C71ADEB97E0077DDF1 /* grubby-worm-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grubby-worm-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00222CB1ADEB97E0077DDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00222CC1ADEB97E0077DDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B00222CE1ADEB97E0077DDF1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B00222D01ADEB97E0077DDF1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B00222D21ADEB97E0077DDF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B00222D51ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B00222D71ADEB97E0077DDF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B00222DA1ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B00222E01ADEB97F0077DDF1 /* grubby-worm-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grubby-worm-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00222E51ADEB97F0077DDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grubby_worm_swiftTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B0C408571AD2BD61002745FD /* Frameworks */ = {
+		B00222C41ADEB97E0077DDF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DC317D1AD8ED1300806AF5 /* LTMorphingLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0C4086C1AD2BD61002745FD /* Frameworks */ = {
+		B00222DD1ADEB97F0077DDF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,121 +60,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B004CB5D1AD2BF7400DAAF0B /* base */ = {
+		B00222BE1ADEB97E0077DDF1 = {
 			isa = PBXGroup;
 			children = (
-				B004CB601AD2BFFE00DAAF0B /* playground */,
-				B004CB5F1AD2BFA200DAAF0B /* worm */,
-				B004CB5E1AD2BF9100DAAF0B /* trigger */,
-				B004CB611AD2C07000DAAF0B /* Common.swift */,
-			);
-			name = base;
-			sourceTree = "<group>";
-		};
-		B004CB5E1AD2BF9100DAAF0B /* trigger */ = {
-			isa = PBXGroup;
-			children = (
-				B004CB691AD2C45100DAAF0B /* Trigger.swift */,
-			);
-			name = trigger;
-			sourceTree = "<group>";
-		};
-		B004CB5F1AD2BFA200DAAF0B /* worm */ = {
-			isa = PBXGroup;
-			children = (
-				B004CB631AD2C37200DAAF0B /* Worm.swift */,
-			);
-			name = worm;
-			sourceTree = "<group>";
-		};
-		B004CB601AD2BFFE00DAAF0B /* playground */ = {
-			isa = PBXGroup;
-			children = (
-				B004CB651AD2C42000DAAF0B /* Playground.swift */,
-			);
-			name = playground;
-			sourceTree = "<group>";
-		};
-		B0C408511AD2BD61002745FD = {
-			isa = PBXGroup;
-			children = (
-				B0DC31831AD8F53B00806AF5 /* Stiff Staff.otf */,
-				B0C4085C1AD2BD61002745FD /* grubby-worm-swift */,
-				B0C408721AD2BD61002745FD /* grubby-worm-swiftTests */,
-				B0C4085B1AD2BD61002745FD /* Products */,
+				B00222C91ADEB97E0077DDF1 /* grubby-worm-swift */,
+				B00222E31ADEB97F0077DDF1 /* grubby-worm-swiftTests */,
+				B00222C81ADEB97E0077DDF1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B0C4085B1AD2BD61002745FD /* Products */ = {
+		B00222C81ADEB97E0077DDF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0C4085A1AD2BD61002745FD /* grubby-worm-swift.app */,
-				B0C4086F1AD2BD61002745FD /* grubby-worm-swiftTests.xctest */,
+				B00222C71ADEB97E0077DDF1 /* grubby-worm-swift.app */,
+				B00222E01ADEB97F0077DDF1 /* grubby-worm-swiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0C4085C1AD2BD61002745FD /* grubby-worm-swift */ = {
+		B00222C91ADEB97E0077DDF1 /* grubby-worm-swift */ = {
 			isa = PBXGroup;
 			children = (
-				B0DC317E1AD8ED2600806AF5 /* framework */,
-				B004CB5D1AD2BF7400DAAF0B /* base */,
-				B0C4085F1AD2BD61002745FD /* AppDelegate.swift */,
-				B0C408611AD2BD61002745FD /* ViewController.swift */,
-				B0C408631AD2BD61002745FD /* Main.storyboard */,
-				B0C408661AD2BD61002745FD /* Images.xcassets */,
-				B0C4085D1AD2BD61002745FD /* Supporting Files */,
+				B00222CC1ADEB97E0077DDF1 /* AppDelegate.swift */,
+				B00222CE1ADEB97E0077DDF1 /* GameScene.sks */,
+				B00222D01ADEB97E0077DDF1 /* GameScene.swift */,
+				B00222D21ADEB97E0077DDF1 /* GameViewController.swift */,
+				B00222D71ADEB97E0077DDF1 /* Images.xcassets */,
+				B00222CA1ADEB97E0077DDF1 /* Supporting Files */,
 			);
 			path = "grubby-worm-swift";
 			sourceTree = "<group>";
 		};
-		B0C4085D1AD2BD61002745FD /* Supporting Files */ = {
+		B00222CA1ADEB97E0077DDF1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B004CB6C1AD2C95B00DAAF0B /* Cartfile */,
-				B0DC317F1AD8F16000806AF5 /* Cartfile.resolved */,
-				B0C408681AD2BD61002745FD /* LaunchScreen.xib */,
-				B0C4085E1AD2BD61002745FD /* Info.plist */,
+				B00222D41ADEB97E0077DDF1 /* Main.storyboard */,
+				B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */,
+				B00222CB1ADEB97E0077DDF1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B0C408721AD2BD61002745FD /* grubby-worm-swiftTests */ = {
+		B00222E31ADEB97F0077DDF1 /* grubby-worm-swiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0C408751AD2BD61002745FD /* grubby_worm_swiftTests.swift */,
-				B0C408731AD2BD61002745FD /* Supporting Files */,
+				B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */,
+				B00222E41ADEB97F0077DDF1 /* Supporting Files */,
 			);
 			path = "grubby-worm-swiftTests";
 			sourceTree = "<group>";
 		};
-		B0C408731AD2BD61002745FD /* Supporting Files */ = {
+		B00222E41ADEB97F0077DDF1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0C408741AD2BD61002745FD /* Info.plist */,
+				B00222E51ADEB97F0077DDF1 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B0DC317E1AD8ED2600806AF5 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				B0DC317C1AD8ED1300806AF5 /* LTMorphingLabel.framework */,
-			);
-			name = framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0C408591AD2BD61002745FD /* grubby-worm-swift */ = {
+		B00222C61ADEB97E0077DDF1 /* grubby-worm-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0C408791AD2BD61002745FD /* Build configuration list for PBXNativeTarget "grubby-worm-swift" */;
+			buildConfigurationList = B00222EA1ADEB97F0077DDF1 /* Build configuration list for PBXNativeTarget "grubby-worm-swift" */;
 			buildPhases = (
-				B0C408561AD2BD61002745FD /* Sources */,
-				B0C408571AD2BD61002745FD /* Frameworks */,
-				B0C408581AD2BD61002745FD /* Resources */,
-				B004CB701AD2CB4800DAAF0B /* ShellScript */,
+				B00222C31ADEB97E0077DDF1 /* Sources */,
+				B00222C41ADEB97E0077DDF1 /* Frameworks */,
+				B00222C51ADEB97E0077DDF1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -195,46 +135,46 @@
 			);
 			name = "grubby-worm-swift";
 			productName = "grubby-worm-swift";
-			productReference = B0C4085A1AD2BD61002745FD /* grubby-worm-swift.app */;
+			productReference = B00222C71ADEB97E0077DDF1 /* grubby-worm-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B0C4086E1AD2BD61002745FD /* grubby-worm-swiftTests */ = {
+		B00222DF1ADEB97F0077DDF1 /* grubby-worm-swiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0C4087C1AD2BD61002745FD /* Build configuration list for PBXNativeTarget "grubby-worm-swiftTests" */;
+			buildConfigurationList = B00222ED1ADEB97F0077DDF1 /* Build configuration list for PBXNativeTarget "grubby-worm-swiftTests" */;
 			buildPhases = (
-				B0C4086B1AD2BD61002745FD /* Sources */,
-				B0C4086C1AD2BD61002745FD /* Frameworks */,
-				B0C4086D1AD2BD61002745FD /* Resources */,
+				B00222DC1ADEB97F0077DDF1 /* Sources */,
+				B00222DD1ADEB97F0077DDF1 /* Frameworks */,
+				B00222DE1ADEB97F0077DDF1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0C408711AD2BD61002745FD /* PBXTargetDependency */,
+				B00222E21ADEB97F0077DDF1 /* PBXTargetDependency */,
 			);
 			name = "grubby-worm-swiftTests";
 			productName = "grubby-worm-swiftTests";
-			productReference = B0C4086F1AD2BD61002745FD /* grubby-worm-swiftTests.xctest */;
+			productReference = B00222E01ADEB97F0077DDF1 /* grubby-worm-swiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B0C408521AD2BD61002745FD /* Project object */ = {
+		B00222BF1ADEB97E0077DDF1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Wayne;
 				TargetAttributes = {
-					B0C408591AD2BD61002745FD = {
-						CreatedOnToolsVersion = 6.2;
+					B00222C61ADEB97E0077DDF1 = {
+						CreatedOnToolsVersion = 6.3;
 					};
-					B0C4086E1AD2BD61002745FD = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = B0C408591AD2BD61002745FD;
+					B00222DF1ADEB97F0077DDF1 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = B00222C61ADEB97E0077DDF1;
 					};
 				};
 			};
-			buildConfigurationList = B0C408551AD2BD61002745FD /* Build configuration list for PBXProject "grubby-worm-swift" */;
+			buildConfigurationList = B00222C21ADEB97E0077DDF1 /* Build configuration list for PBXProject "grubby-worm-swift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -242,32 +182,30 @@
 				en,
 				Base,
 			);
-			mainGroup = B0C408511AD2BD61002745FD;
-			productRefGroup = B0C4085B1AD2BD61002745FD /* Products */;
+			mainGroup = B00222BE1ADEB97E0077DDF1;
+			productRefGroup = B00222C81ADEB97E0077DDF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0C408591AD2BD61002745FD /* grubby-worm-swift */,
-				B0C4086E1AD2BD61002745FD /* grubby-worm-swiftTests */,
+				B00222C61ADEB97E0077DDF1 /* grubby-worm-swift */,
+				B00222DF1ADEB97F0077DDF1 /* grubby-worm-swiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B0C408581AD2BD61002745FD /* Resources */ = {
+		B00222C51ADEB97E0077DDF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DC31841AD8F53B00806AF5 /* Stiff Staff.otf in Resources */,
-				B0C408651AD2BD61002745FD /* Main.storyboard in Resources */,
-				B0C4086A1AD2BD61002745FD /* LaunchScreen.xib in Resources */,
-				B004CB6D1AD2C95B00DAAF0B /* Cartfile in Resources */,
-				B0DC31801AD8F16000806AF5 /* Cartfile.resolved in Resources */,
-				B0C408671AD2BD61002745FD /* Images.xcassets in Resources */,
+				B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */,
+				B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */,
+				B00222CF1ADEB97E0077DDF1 /* GameScene.sks in Resources */,
+				B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0C4086D1AD2BD61002745FD /* Resources */ = {
+		B00222DE1ADEB97F0077DDF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,68 +214,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		B004CB701AD2CB4800DAAF0B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/LTMorphingLabel.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		B0C408561AD2BD61002745FD /* Sources */ = {
+		B00222C31ADEB97E0077DDF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C408621AD2BD61002745FD /* ViewController.swift in Sources */,
-				B004CB661AD2C42000DAAF0B /* Playground.swift in Sources */,
-				B004CB621AD2C07000DAAF0B /* Common.swift in Sources */,
-				B004CB641AD2C37200DAAF0B /* Worm.swift in Sources */,
-				B004CB6A1AD2C45100DAAF0B /* Trigger.swift in Sources */,
-				B0C408601AD2BD61002745FD /* AppDelegate.swift in Sources */,
+				B00222D11ADEB97E0077DDF1 /* GameScene.swift in Sources */,
+				B00222D31ADEB97E0077DDF1 /* GameViewController.swift in Sources */,
+				B00222CD1ADEB97E0077DDF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0C4086B1AD2BD61002745FD /* Sources */ = {
+		B00222DC1ADEB97F0077DDF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C408761AD2BD61002745FD /* grubby_worm_swiftTests.swift in Sources */,
+				B00222E71ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B0C408711AD2BD61002745FD /* PBXTargetDependency */ = {
+		B00222E21ADEB97F0077DDF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0C408591AD2BD61002745FD /* grubby-worm-swift */;
-			targetProxy = B0C408701AD2BD61002745FD /* PBXContainerItemProxy */;
+			target = B00222C61ADEB97E0077DDF1 /* grubby-worm-swift */;
+			targetProxy = B00222E11ADEB97F0077DDF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B0C408631AD2BD61002745FD /* Main.storyboard */ = {
+		B00222D41ADEB97E0077DDF1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B0C408641AD2BD61002745FD /* Base */,
+				B00222D51ADEB97E0077DDF1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B0C408681AD2BD61002745FD /* LaunchScreen.xib */ = {
+		B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B0C408691AD2BD61002745FD /* Base */,
+				B00222DA1ADEB97E0077DDF1 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -345,7 +263,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B0C408771AD2BD61002745FD /* Debug */ = {
+		B00222E81ADEB97F0077DDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -364,9 +282,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -379,15 +299,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B0C408781AD2BD61002745FD /* Release */ = {
+		B00222E91ADEB97F0077DDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -406,51 +327,48 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B0C4087A1AD2BD61002745FD /* Debug */ = {
+		B00222EB1ADEB97F0077DDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B0C4087B1AD2BD61002745FD /* Release */ = {
+		B00222EC1ADEB97F0077DDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		B0C4087D1AD2BD61002745FD /* Debug */ = {
+		B00222EE1ADEB97F0077DDF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,7 +387,7 @@
 			};
 			name = Debug;
 		};
-		B0C4087E1AD2BD61002745FD /* Release */ = {
+		B00222EF1ADEB97F0077DDF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,34 +405,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0C408551AD2BD61002745FD /* Build configuration list for PBXProject "grubby-worm-swift" */ = {
+		B00222C21ADEB97E0077DDF1 /* Build configuration list for PBXProject "grubby-worm-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0C408771AD2BD61002745FD /* Debug */,
-				B0C408781AD2BD61002745FD /* Release */,
+				B00222E81ADEB97F0077DDF1 /* Debug */,
+				B00222E91ADEB97F0077DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0C408791AD2BD61002745FD /* Build configuration list for PBXNativeTarget "grubby-worm-swift" */ = {
+		B00222EA1ADEB97F0077DDF1 /* Build configuration list for PBXNativeTarget "grubby-worm-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0C4087A1AD2BD61002745FD /* Debug */,
-				B0C4087B1AD2BD61002745FD /* Release */,
+				B00222EB1ADEB97F0077DDF1 /* Debug */,
+				B00222EC1ADEB97F0077DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		B0C4087C1AD2BD61002745FD /* Build configuration list for PBXNativeTarget "grubby-worm-swiftTests" */ = {
+		B00222ED1ADEB97F0077DDF1 /* Build configuration list for PBXNativeTarget "grubby-worm-swiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0C4087D1AD2BD61002745FD /* Debug */,
-				B0C4087E1AD2BD61002745FD /* Release */,
+				B00222EE1ADEB97F0077DDF1 /* Debug */,
+				B00222EF1ADEB97F0077DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B0C408521AD2BD61002745FD /* Project object */;
+	rootObject = B00222BF1ADEB97E0077DDF1 /* Project object */;
 }
