@@ -15,6 +15,9 @@
 		B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00222D71ADEB97E0077DDF1 /* Images.xcassets */; };
 		B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */; };
 		B00222E71ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */; };
+		B0B0B7CC1ADEC22B00C28DAB /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B0B0B7CB1ADEC22B00C28DAB /* Cartfile */; };
+		B0BEAEB61AE01790000EB80F /* shader_water_movement.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0BEAEB51AE01790000EB80F /* shader_water_movement.fsh */; };
+		B0BEAEB81AE017B1000EB80F /* shader_water_reflection.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0BEAEB71AE017B1000EB80F /* shader_water_reflection.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		B00222E01ADEB97F0077DDF1 /* grubby-worm-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grubby-worm-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00222E51ADEB97F0077DDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grubby_worm_swiftTests.swift; sourceTree = "<group>"; };
+		B0B0B7CB1ADEC22B00C28DAB /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		B0BEAEB51AE01790000EB80F /* shader_water_movement.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_water_movement.fsh; sourceTree = "<group>"; };
+		B0BEAEB71AE017B1000EB80F /* shader_water_reflection.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_water_reflection.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		B00222BE1ADEB97E0077DDF1 = {
 			isa = PBXGroup;
 			children = (
+				B0BEAEB71AE017B1000EB80F /* shader_water_reflection.fsh */,
+				B0BEAEB51AE01790000EB80F /* shader_water_movement.fsh */,
 				B00222C91ADEB97E0077DDF1 /* grubby-worm-swift */,
 				B00222E31ADEB97F0077DDF1 /* grubby-worm-swiftTests */,
 				B00222C81ADEB97E0077DDF1 /* Products */,
@@ -94,6 +102,7 @@
 		B00222CA1ADEB97E0077DDF1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0B0B7CB1ADEC22B00C28DAB /* Cartfile */,
 				B00222D41ADEB97E0077DDF1 /* Main.storyboard */,
 				B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */,
 				B00222CB1ADEB97E0077DDF1 /* Info.plist */,
@@ -198,9 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B0B7CC1ADEC22B00C28DAB /* Cartfile in Resources */,
+				B0BEAEB61AE01790000EB80F /* shader_water_movement.fsh in Resources */,
 				B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */,
 				B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */,
 				B00222CF1ADEB97E0077DDF1 /* GameScene.sks in Resources */,
+				B0BEAEB81AE017B1000EB80F /* shader_water_reflection.fsh in Resources */,
 				B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +433,7 @@
 				B00222EC1ADEB97F0077DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B00222ED1ADEB97F0077DDF1 /* Build configuration list for PBXNativeTarget "grubby-worm-swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +442,7 @@
 				B00222EF1ADEB97F0077DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
