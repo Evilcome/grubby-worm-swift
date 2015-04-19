@@ -10,59 +10,46 @@ import SpriteKit
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
-        let shaderContainer_move = SKSpriteNode(imageNamed: "dummypixel")
-        shaderContainer_move.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2)
-        shaderContainer_move.size = CGSizeMake(self.frame.size.width, self.frame.size.height)
+        let location = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         
-        addChild(shaderContainer_move)
+        let barra = SKShapeNode(rectOfSize: CGSize(width: 64, height: 64))
+        barra.name = "test"
+        barra.fillColor = SKColor.whiteColor()
+        barra.position = location
         
-        let shader_move = SKShader(fileNamed: "shader_water_movement.fsh")
-        //Set vairiables that are used in the shader script
-        shader_move.uniforms = [
-            SKUniform(name: "size", floatVector3: GLKVector3Make(Float(frame.size.width)*1.5, Float(frame.height)*1.5, 0)),
-            SKUniform(name: "customTexture", texture: SKTexture(imageNamed: "sand"))
-        ]
-        //add the shader to the sprite
-        shaderContainer_move.shader = shader_move
+        addChild(barra)
         
-        let shaderContainer_reflect = SKSpriteNode(imageNamed: "dummypixel")
-        shaderContainer_reflect.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2)
-        shaderContainer_reflect.size = CGSizeMake(self.frame.size.width, self.frame.size.height)
-        addChild(shaderContainer_reflect)
+        let sprite = SKSpriteNode(imageNamed: "base")
+        sprite.position = CGPointMake(location.x + 100, location.y)
         
-        let shader_reflect = SKShader(fileNamed: "shader_water_reflection.fsh")
-        //Set vairiables that are used in the shader script
-        shader_reflect.uniforms = [
-            SKUniform(name: "size", floatVector3: GLKVector3Make(Float(frame.size.width), Float(frame.height), 0)),
-        ]
-        //add the shader to the sprite
-        shaderContainer_reflect.shader = shader_reflect
+        addChild(sprite)
         
-        let beach = SKSpriteNode(imageNamed: "beach")
-        beach.size = self.size
-        beach.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2-100)
+        let playground = Playground(size: CGSizeZero)
+        println(playground)
         
-        addChild(beach)
+        let pP = PeacefulPlayground(size: CGSizeZero)
+        println(pP)
+        
+        playground.position = location
+        addChild(playground)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
         
-        for touch in (touches as! Set<UITouch>) {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"bk")
-            
-            sprite.xScale = 0.5 + 2 * CGFloat(Float(arc4random()) / Float(UINT32_MAX))
-            sprite.yScale = sprite.xScale
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
+//        for touch in (touches as! Set<UITouch>) {
+//            let location = touch.locationInNode(self)
+//            
+//            let sprite = SKSpriteNode(imageNamed:"logo")
+//            
+//            sprite.position = location
+//            
+//            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
+//            
+//            sprite.runAction(SKAction.repeatActionForever(action))
+//            
+//            self.addChild(sprite)
+//        }
     }
    
     override func update(currentTime: CFTimeInterval) {

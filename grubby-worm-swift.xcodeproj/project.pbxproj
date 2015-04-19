@@ -8,55 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		B00222CD1ADEB97E0077DDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222CC1ADEB97E0077DDF1 /* AppDelegate.swift */; };
-		B00222CF1ADEB97E0077DDF1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B00222CE1ADEB97E0077DDF1 /* GameScene.sks */; };
 		B00222D11ADEB97E0077DDF1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222D01ADEB97E0077DDF1 /* GameScene.swift */; };
 		B00222D31ADEB97E0077DDF1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222D21ADEB97E0077DDF1 /* GameViewController.swift */; };
 		B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00222D41ADEB97E0077DDF1 /* Main.storyboard */; };
 		B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00222D71ADEB97E0077DDF1 /* Images.xcassets */; };
 		B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */; };
-		B00222E71ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */; };
 		B0B0B7CC1ADEC22B00C28DAB /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B0B0B7CB1ADEC22B00C28DAB /* Cartfile */; };
-		B0BEAEB61AE01790000EB80F /* shader_water_movement.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0BEAEB51AE01790000EB80F /* shader_water_movement.fsh */; };
-		B0BEAEB81AE017B1000EB80F /* shader_water_reflection.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0BEAEB71AE017B1000EB80F /* shader_water_reflection.fsh */; };
+		B0D934541AE37C4100FE4B8B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934531AE37C4100FE4B8B /* Playground.swift */; };
+		B0D934561AE38EDD00FE4B8B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934551AE38EDD00FE4B8B /* Common.swift */; };
+		B0D934581AE3970700FE4B8B /* PeacefulPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934571AE3970700FE4B8B /* PeacefulPlayground.swift */; };
+		B0D9345A1AE39AA800FE4B8B /* SurvivalPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */; };
+		B0D9345E1AE39B9F00FE4B8B /* Worm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9345D1AE39B9F00FE4B8B /* Worm.swift */; };
+		B0D934601AE39BB100FE4B8B /* GrubbyWorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9345F1AE39BB100FE4B8B /* GrubbyWorm.swift */; };
+		B0D934621AE39BCB00FE4B8B /* CrazyWorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934611AE39BCB00FE4B8B /* CrazyWorm.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B00222E11ADEB97F0077DDF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B00222BF1ADEB97E0077DDF1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B00222C61ADEB97E0077DDF1;
-			remoteInfo = "grubby-worm-swift";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B00222C71ADEB97E0077DDF1 /* grubby-worm-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grubby-worm-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00222CB1ADEB97E0077DDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00222CC1ADEB97E0077DDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B00222CE1ADEB97E0077DDF1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		B00222D01ADEB97E0077DDF1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B00222D21ADEB97E0077DDF1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B00222D51ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B00222D71ADEB97E0077DDF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B00222DA1ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B00222E01ADEB97F0077DDF1 /* grubby-worm-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grubby-worm-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B00222E51ADEB97F0077DDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grubby_worm_swiftTests.swift; sourceTree = "<group>"; };
 		B0B0B7CB1ADEC22B00C28DAB /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		B0BEAEB51AE01790000EB80F /* shader_water_movement.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_water_movement.fsh; sourceTree = "<group>"; };
-		B0BEAEB71AE017B1000EB80F /* shader_water_reflection.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_water_reflection.fsh; sourceTree = "<group>"; };
+		B0D934531AE37C4100FE4B8B /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		B0D934551AE38EDD00FE4B8B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B0D934571AE3970700FE4B8B /* PeacefulPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeacefulPlayground.swift; sourceTree = "<group>"; };
+		B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurvivalPlayground.swift; sourceTree = "<group>"; };
+		B0D9345D1AE39B9F00FE4B8B /* Worm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worm.swift; sourceTree = "<group>"; };
+		B0D9345F1AE39BB100FE4B8B /* GrubbyWorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubbyWorm.swift; sourceTree = "<group>"; };
+		B0D934611AE39BCB00FE4B8B /* CrazyWorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrazyWorm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B00222C41ADEB97E0077DDF1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B00222DD1ADEB97F0077DDF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,10 +56,7 @@
 		B00222BE1ADEB97E0077DDF1 = {
 			isa = PBXGroup;
 			children = (
-				B0BEAEB71AE017B1000EB80F /* shader_water_reflection.fsh */,
-				B0BEAEB51AE01790000EB80F /* shader_water_movement.fsh */,
 				B00222C91ADEB97E0077DDF1 /* grubby-worm-swift */,
-				B00222E31ADEB97F0077DDF1 /* grubby-worm-swiftTests */,
 				B00222C81ADEB97E0077DDF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				B00222C71ADEB97E0077DDF1 /* grubby-worm-swift.app */,
-				B00222E01ADEB97F0077DDF1 /* grubby-worm-swiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,11 +73,18 @@
 			isa = PBXGroup;
 			children = (
 				B00222CC1ADEB97E0077DDF1 /* AppDelegate.swift */,
-				B00222CE1ADEB97E0077DDF1 /* GameScene.sks */,
 				B00222D01ADEB97E0077DDF1 /* GameScene.swift */,
 				B00222D21ADEB97E0077DDF1 /* GameViewController.swift */,
 				B00222D71ADEB97E0077DDF1 /* Images.xcassets */,
+				B00222D41ADEB97E0077DDF1 /* Main.storyboard */,
 				B00222CA1ADEB97E0077DDF1 /* Supporting Files */,
+				B0D934551AE38EDD00FE4B8B /* Common.swift */,
+				B0D934531AE37C4100FE4B8B /* Playground.swift */,
+				B0D934571AE3970700FE4B8B /* PeacefulPlayground.swift */,
+				B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */,
+				B0D9345D1AE39B9F00FE4B8B /* Worm.swift */,
+				B0D9345F1AE39BB100FE4B8B /* GrubbyWorm.swift */,
+				B0D934611AE39BCB00FE4B8B /* CrazyWorm.swift */,
 			);
 			path = "grubby-worm-swift";
 			sourceTree = "<group>";
@@ -103,26 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				B0B0B7CB1ADEC22B00C28DAB /* Cartfile */,
-				B00222D41ADEB97E0077DDF1 /* Main.storyboard */,
 				B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */,
 				B00222CB1ADEB97E0077DDF1 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B00222E31ADEB97F0077DDF1 /* grubby-worm-swiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				B00222E61ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift */,
-				B00222E41ADEB97F0077DDF1 /* Supporting Files */,
-			);
-			path = "grubby-worm-swiftTests";
-			sourceTree = "<group>";
-		};
-		B00222E41ADEB97F0077DDF1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B00222E51ADEB97F0077DDF1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,24 +119,6 @@
 			productReference = B00222C71ADEB97E0077DDF1 /* grubby-worm-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B00222DF1ADEB97F0077DDF1 /* grubby-worm-swiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B00222ED1ADEB97F0077DDF1 /* Build configuration list for PBXNativeTarget "grubby-worm-swiftTests" */;
-			buildPhases = (
-				B00222DC1ADEB97F0077DDF1 /* Sources */,
-				B00222DD1ADEB97F0077DDF1 /* Frameworks */,
-				B00222DE1ADEB97F0077DDF1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B00222E21ADEB97F0077DDF1 /* PBXTargetDependency */,
-			);
-			name = "grubby-worm-swiftTests";
-			productName = "grubby-worm-swiftTests";
-			productReference = B00222E01ADEB97F0077DDF1 /* grubby-worm-swiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,10 +130,6 @@
 				TargetAttributes = {
 					B00222C61ADEB97E0077DDF1 = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					B00222DF1ADEB97F0077DDF1 = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = B00222C61ADEB97E0077DDF1;
 					};
 				};
 			};
@@ -197,7 +147,6 @@
 			projectRoot = "";
 			targets = (
 				B00222C61ADEB97E0077DDF1 /* grubby-worm-swift */,
-				B00222DF1ADEB97F0077DDF1 /* grubby-worm-swiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,19 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B0B7CC1ADEC22B00C28DAB /* Cartfile in Resources */,
-				B0BEAEB61AE01790000EB80F /* shader_water_movement.fsh in Resources */,
 				B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */,
 				B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */,
-				B00222CF1ADEB97E0077DDF1 /* GameScene.sks in Resources */,
-				B0BEAEB81AE017B1000EB80F /* shader_water_reflection.fsh in Resources */,
 				B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B00222DE1ADEB97F0077DDF1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,29 +170,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0D934621AE39BCB00FE4B8B /* CrazyWorm.swift in Sources */,
+				B0D934601AE39BB100FE4B8B /* GrubbyWorm.swift in Sources */,
+				B0D934541AE37C4100FE4B8B /* Playground.swift in Sources */,
 				B00222D11ADEB97E0077DDF1 /* GameScene.swift in Sources */,
+				B0D9345E1AE39B9F00FE4B8B /* Worm.swift in Sources */,
 				B00222D31ADEB97E0077DDF1 /* GameViewController.swift in Sources */,
+				B0D9345A1AE39AA800FE4B8B /* SurvivalPlayground.swift in Sources */,
+				B0D934561AE38EDD00FE4B8B /* Common.swift in Sources */,
 				B00222CD1ADEB97E0077DDF1 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B00222DC1ADEB97F0077DDF1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B00222E71ADEB97F0077DDF1 /* grubby_worm_swiftTests.swift in Sources */,
+				B0D934581AE3970700FE4B8B /* PeacefulPlayground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B00222E21ADEB97F0077DDF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B00222C61ADEB97E0077DDF1 /* grubby-worm-swift */;
-			targetProxy = B00222E11ADEB97F0077DDF1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B00222D41ADEB97E0077DDF1 /* Main.storyboard */ = {
@@ -380,40 +310,6 @@
 			};
 			name = Release;
 		};
-		B00222EE1ADEB97F0077DDF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "grubby-worm-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grubby-worm-swift.app/grubby-worm-swift";
-			};
-			name = Debug;
-		};
-		B00222EF1ADEB97F0077DDF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "grubby-worm-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grubby-worm-swift.app/grubby-worm-swift";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,15 +327,6 @@
 			buildConfigurations = (
 				B00222EB1ADEB97F0077DDF1 /* Debug */,
 				B00222EC1ADEB97F0077DDF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B00222ED1ADEB97F0077DDF1 /* Build configuration list for PBXNativeTarget "grubby-worm-swiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B00222EE1ADEB97F0077DDF1 /* Debug */,
-				B00222EF1ADEB97F0077DDF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
