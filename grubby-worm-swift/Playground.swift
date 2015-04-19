@@ -20,11 +20,10 @@ class Playground : SKNode {
         super.init()
         
         
-        for i in 0...16 {
-            let node = SKShapeNode(rectOfSize: CGSizeMake(32, 32))
-            node.fillColor = randomColor(hue: .Blue, luminosity: .Light)
+        for i in 0...50 {
+            let node = SKSpriteNode(imageNamed: "base")
+            
             node.position = CGPointZero + CGPoint(x: 34 * i, y: 0)
-            node.strokeColor = node.fillColor
             
             self.addChild(node)
         }
