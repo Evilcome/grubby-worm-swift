@@ -18,6 +18,16 @@ class Playground : SKNode {
         self.size = size
         
         super.init()
+        
+        
+        for i in 0...16 {
+            let node = SKShapeNode(rectOfSize: CGSizeMake(32, 32))
+            node.fillColor = randomColor(hue: .Blue, luminosity: .Light)
+            node.position = CGPointZero + CGPoint(x: 34 * i, y: 0)
+            node.strokeColor = node.fillColor
+            
+            self.addChild(node)
+        }
     }
 
     required init?(coder aDecoder: NSCoder) {

@@ -12,25 +12,10 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         let location = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         
-        let barra = SKShapeNode(rectOfSize: CGSize(width: 64, height: 64))
-        barra.name = "test"
-        barra.fillColor = SKColor.whiteColor()
-        barra.position = location
-        
-        addChild(barra)
-        
-        let sprite = SKSpriteNode(imageNamed: "base")
-        sprite.position = CGPointMake(location.x + 100, location.y)
-        
-        addChild(sprite)
-        
         let playground = Playground(size: CGSizeZero)
-        println(playground)
         
-        let pP = PeacefulPlayground(size: CGSizeZero)
-        println(pP)
+        playground.position = CGPointMake(18, CGRectGetMidY(self.frame))
         
-        playground.position = location
         addChild(playground)
     }
     
