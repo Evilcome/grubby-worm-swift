@@ -13,9 +13,9 @@
 		B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00222D41ADEB97E0077DDF1 /* Main.storyboard */; };
 		B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00222D71ADEB97E0077DDF1 /* Images.xcassets */; };
 		B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */; };
+		B0CBD4DD1AE40270002EEFC1 /* PeacePlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBD4DC1AE40270002EEFC1 /* PeacePlayground.swift */; };
 		B0D934541AE37C4100FE4B8B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934531AE37C4100FE4B8B /* Playground.swift */; };
 		B0D934561AE38EDD00FE4B8B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934551AE38EDD00FE4B8B /* Common.swift */; };
-		B0D934581AE3970700FE4B8B /* PeacefulPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934571AE3970700FE4B8B /* PeacefulPlayground.swift */; };
 		B0D9345A1AE39AA800FE4B8B /* SurvivalPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */; };
 		B0D9345E1AE39B9F00FE4B8B /* Worm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9345D1AE39B9F00FE4B8B /* Worm.swift */; };
 		B0D934601AE39BB100FE4B8B /* GrubbyWorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9345F1AE39BB100FE4B8B /* GrubbyWorm.swift */; };
@@ -48,9 +48,9 @@
 		B00222D51ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B00222D71ADEB97E0077DDF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B00222DA1ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B0CBD4DC1AE40270002EEFC1 /* PeacePlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeacePlayground.swift; sourceTree = "<group>"; };
 		B0D934531AE37C4100FE4B8B /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		B0D934551AE38EDD00FE4B8B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		B0D934571AE3970700FE4B8B /* PeacefulPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeacefulPlayground.swift; sourceTree = "<group>"; };
 		B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurvivalPlayground.swift; sourceTree = "<group>"; };
 		B0D9345D1AE39B9F00FE4B8B /* Worm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worm.swift; sourceTree = "<group>"; };
 		B0D9345F1AE39BB100FE4B8B /* GrubbyWorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubbyWorm.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				B00222CA1ADEB97E0077DDF1 /* Supporting Files */,
 				B0D934551AE38EDD00FE4B8B /* Common.swift */,
 				B0D934531AE37C4100FE4B8B /* Playground.swift */,
-				B0D934571AE3970700FE4B8B /* PeacefulPlayground.swift */,
+				B0CBD4DC1AE40270002EEFC1 /* PeacePlayground.swift */,
 				B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */,
 				B0D9345D1AE39B9F00FE4B8B /* Worm.swift */,
 				B0D9345F1AE39BB100FE4B8B /* GrubbyWorm.swift */,
@@ -255,6 +255,7 @@
 				B00222D31ADEB97E0077DDF1 /* GameViewController.swift in Sources */,
 				B0D9345A1AE39AA800FE4B8B /* SurvivalPlayground.swift in Sources */,
 				B0D934561AE38EDD00FE4B8B /* Common.swift in Sources */,
+				B0CBD4DD1AE40270002EEFC1 /* PeacePlayground.swift in Sources */,
 				B0D934791AE3A6A100FE4B8B /* SKNode+Extensions.swift in Sources */,
 				B0D934881AE3A86500FE4B8B /* Hue.swift in Sources */,
 				B00222CD1ADEB97E0077DDF1 /* AppDelegate.swift in Sources */,
@@ -265,7 +266,6 @@
 				B0D934781AE3A6A100FE4B8B /* SKColor+Extensions.swift in Sources */,
 				B0D934871AE3A86500FE4B8B /* ColorDefinition.swift in Sources */,
 				B0D9347A1AE3A6A100FE4B8B /* SKTAudio.swift in Sources */,
-				B0D934581AE3970700FE4B8B /* PeacefulPlayground.swift in Sources */,
 				B0D9348B1AE3A86500FE4B8B /* RandomColor.swift in Sources */,
 				B0D9348A1AE3A86500FE4B8B /* Luminosity.swift in Sources */,
 			);

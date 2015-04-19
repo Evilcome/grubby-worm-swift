@@ -21,9 +21,24 @@ class Playground : SKNode {
         
         
         for i in 0...50 {
-            let node = SKSpriteNode(imageNamed: "base")
+//            let node = SKSpriteNode(imageNamed: "base")
+            let node = SKSpriteNode(color: randomColor(luminosity: .Light), size: CGSizeMake(78, 78))
+//            node.xScale = 4.0
+            node.yScale = node.xScale
+//            node.size = CGSizeMake(78, 78)
+//            node.color = randomColor(luminosity: .Light)
             
-            node.position = CGPointZero + CGPoint(x: 34 * i, y: 0)
+            node.anchorPoint = CGPointZero
+            
+            node.position = CGPointZero + CGPoint(x: 80 * i, y: 0)
+            
+//            let changeColor = SKAction.colorizeWithColor(randomColor(luminosity: .Light), colorBlendFactor: 1.0, duration: 2)
+//            node.runAction(changeColor)
+            
+            let light = SKLightNode()
+            node.addChild(light)
+            
+            light.ambientColor = randomColor(luminosity: .Bright)
             
             self.addChild(node)
         }

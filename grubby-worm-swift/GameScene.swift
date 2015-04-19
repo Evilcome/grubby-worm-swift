@@ -14,11 +14,11 @@ class GameScene: SKScene {
         
         let playground = Playground(size: CGSizeZero)
         
-        playground.position = CGPointMake(18, CGRectGetMidY(self.frame))
+        playground.position = CGPointMake(2, CGRectGetMidY(self.frame))
         
-        let action = SKAction.rotateByAngle(π, duration: 1)
+        let action = SKAction.rotateByAngle(π, duration: 3)
         
-        playground.runAction(SKAction.repeatActionForever(action))
+//        playground.runAction(SKAction.repeatActionForever(action))
         
         addChild(playground)
     }
