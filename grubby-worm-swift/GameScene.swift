@@ -10,15 +10,10 @@ import SpriteKit
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
-        let location = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
+        let centerPoint = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         
-        let playground = Playground(size: CGSizeZero)
-        
-        playground.position = CGPointMake(2, CGRectGetMidY(self.frame))
-        
-        let action = SKAction.rotateByAngle(π, duration: 3)
-        
-//        playground.runAction(SKAction.repeatActionForever(action))
+        let playground = HarmonyPlayground(size: self.size)
+        playground.position = centerPoint
         
         addChild(playground)
     }

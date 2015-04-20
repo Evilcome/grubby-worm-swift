@@ -8,44 +8,45 @@
 import SpriteKit
 
 class Playground : SKNode {
-    var size: CGSize
+    var size: CGSize {
+        didSet {
+            drawGrid()
+        }
+    }
 
     override var description: String {
         return super.description + " size: {\(size.width), \(size.height)}"
     }
     
     init(size: CGSize) {
+        
+        // init property
         self.size = size
         
         super.init()
         
-        
-        for i in 0...50 {
-//            let node = SKSpriteNode(imageNamed: "base")
-            let node = SKSpriteNode(color: randomColor(luminosity: .Light), size: CGSizeMake(78, 78))
-//            node.xScale = 4.0
-            node.yScale = node.xScale
-//            node.size = CGSizeMake(78, 78)
-//            node.color = randomColor(luminosity: .Light)
-            
-            node.anchorPoint = CGPointZero
-            
-            node.position = CGPointZero + CGPoint(x: 80 * i, y: 0)
-            
-//            let changeColor = SKAction.colorizeWithColor(randomColor(luminosity: .Light), colorBlendFactor: 1.0, duration: 2)
-//            node.runAction(changeColor)
-            
-            let light = SKLightNode()
-            node.addChild(light)
-            
-            light.ambientColor = randomColor(luminosity: .Bright)
-            
-            self.addChild(node)
-        }
+        // call method after super init
+        self.drawGrid()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func drawGrid() {
+        println(size)
+        
+        for i in 0...50 {
+            
+            let node = SKSpriteNode(color: randomColor(luminosity: .Light), size: CGSizeMake(78, 78))
+            node.anchorPoint = CGPointZero
+            node.position = CGPointZero + CGPoint(x: 80 * i, y: 0)
+            
+            let changeColor = SKAction.colorizeWithColor(randomColor(luminosity: .Light), colorBlendFactor: 1.0, duration: 2)
+            node.runAction(changeColor)
+            
+            self.addChild(node)
+        }
     }
     
 }
