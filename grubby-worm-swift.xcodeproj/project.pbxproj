@@ -13,6 +13,10 @@
 		B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00222D41ADEB97E0077DDF1 /* Main.storyboard */; };
 		B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00222D71ADEB97E0077DDF1 /* Images.xcassets */; };
 		B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */; };
+		B0C71D841AE552340002E73D /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71D801AE552340002E73D /* ColorDefinition.swift */; };
+		B0C71D851AE552340002E73D /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71D811AE552340002E73D /* Hue.swift */; };
+		B0C71D861AE552340002E73D /* Luminosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71D821AE552340002E73D /* Luminosity.swift */; };
+		B0C71D871AE552340002E73D /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71D831AE552340002E73D /* RandomColor.swift */; };
 		B0D934541AE37C4100FE4B8B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934531AE37C4100FE4B8B /* Playground.swift */; };
 		B0D934561AE38EDD00FE4B8B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934551AE38EDD00FE4B8B /* Common.swift */; };
 		B0D9345A1AE39AA800FE4B8B /* SurvivalPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */; };
@@ -30,10 +34,6 @@
 		B0D9347B1AE3A6A100FE4B8B /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9346F1AE3A6A100FE4B8B /* SKTEffects.swift */; };
 		B0D9347C1AE3A6A100FE4B8B /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934701AE3A6A100FE4B8B /* SKTTimingFunctions.swift */; };
 		B0D9347D1AE3A6A100FE4B8B /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934711AE3A6A100FE4B8B /* Vector3.swift */; };
-		B0D934871AE3A86500FE4B8B /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934811AE3A86500FE4B8B /* ColorDefinition.swift */; };
-		B0D934881AE3A86500FE4B8B /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934821AE3A86500FE4B8B /* Hue.swift */; };
-		B0D9348A1AE3A86500FE4B8B /* Luminosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934841AE3A86500FE4B8B /* Luminosity.swift */; };
-		B0D9348B1AE3A86500FE4B8B /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934861AE3A86500FE4B8B /* RandomColor.swift */; };
 		B0D9348D1AE3B24800FE4B8B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B0D9348C1AE3B24800FE4B8B /* Cartfile */; };
 		B0D9348F1AE4E12500FE4B8B /* HarmonyPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9348E1AE4E12500FE4B8B /* HarmonyPlayground.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +47,10 @@
 		B00222D51ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B00222D71ADEB97E0077DDF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B00222DA1ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B0C71D801AE552340002E73D /* ColorDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefinition.swift; sourceTree = "<group>"; };
+		B0C71D811AE552340002E73D /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
+		B0C71D821AE552340002E73D /* Luminosity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Luminosity.swift; sourceTree = "<group>"; };
+		B0C71D831AE552340002E73D /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		B0D934531AE37C4100FE4B8B /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		B0D934551AE38EDD00FE4B8B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurvivalPlayground.swift; sourceTree = "<group>"; };
@@ -64,10 +68,6 @@
 		B0D9346F1AE3A6A100FE4B8B /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
 		B0D934701AE3A6A100FE4B8B /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
 		B0D934711AE3A6A100FE4B8B /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
-		B0D934811AE3A86500FE4B8B /* ColorDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefinition.swift; sourceTree = "<group>"; };
-		B0D934821AE3A86500FE4B8B /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
-		B0D934841AE3A86500FE4B8B /* Luminosity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Luminosity.swift; sourceTree = "<group>"; };
-		B0D934861AE3A86500FE4B8B /* RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		B0D9348C1AE3B24800FE4B8B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		B0D9348E1AE4E12500FE4B8B /* HarmonyPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonyPlayground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 		B00222BE1ADEB97E0077DDF1 = {
 			isa = PBXGroup;
 			children = (
-				B0D9347F1AE3A86500FE4B8B /* Third Party */,
+				B0C71D7E1AE552340002E73D /* Third Party */,
 				B0D934651AE3A6A100FE4B8B /* SKTUtils */,
 				B00222C91ADEB97E0077DDF1 /* grubby-worm-swift */,
 				B00222C81ADEB97E0077DDF1 /* Products */,
@@ -130,6 +130,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B0C71D7E1AE552340002E73D /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				B0C71D7F1AE552340002E73D /* RandomColor */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		B0C71D7F1AE552340002E73D /* RandomColor */ = {
+			isa = PBXGroup;
+			children = (
+				B0C71D801AE552340002E73D /* ColorDefinition.swift */,
+				B0C71D811AE552340002E73D /* Hue.swift */,
+				B0C71D821AE552340002E73D /* Luminosity.swift */,
+				B0C71D831AE552340002E73D /* RandomColor.swift */,
+			);
+			path = RandomColor;
+			sourceTree = "<group>";
+		};
 		B0D934651AE3A6A100FE4B8B /* SKTUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,25 +166,6 @@
 				B0D934711AE3A6A100FE4B8B /* Vector3.swift */,
 			);
 			path = SKTUtils;
-			sourceTree = "<group>";
-		};
-		B0D9347F1AE3A86500FE4B8B /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-				B0D934801AE3A86500FE4B8B /* RandomColor */,
-			);
-			path = "Third Party";
-			sourceTree = "<group>";
-		};
-		B0D934801AE3A86500FE4B8B /* RandomColor */ = {
-			isa = PBXGroup;
-			children = (
-				B0D934811AE3A86500FE4B8B /* ColorDefinition.swift */,
-				B0D934821AE3A86500FE4B8B /* Hue.swift */,
-				B0D934841AE3A86500FE4B8B /* Luminosity.swift */,
-				B0D934861AE3A86500FE4B8B /* RandomColor.swift */,
-			);
-			path = RandomColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,20 +239,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C71D861AE552340002E73D /* Luminosity.swift in Sources */,
 				B0D9347D1AE3A6A100FE4B8B /* Vector3.swift in Sources */,
 				B0D934771AE3A6A100FE4B8B /* SKAction+SpecialEffects.swift in Sources */,
 				B0D9347B1AE3A6A100FE4B8B /* SKTEffects.swift in Sources */,
 				B0D934721AE3A6A100FE4B8B /* CGFloat+Extensions.swift in Sources */,
 				B0D934601AE39BB100FE4B8B /* GrubbyWorm.swift in Sources */,
 				B0D934541AE37C4100FE4B8B /* Playground.swift in Sources */,
+				B0C71D841AE552340002E73D /* ColorDefinition.swift in Sources */,
 				B00222D11ADEB97E0077DDF1 /* GameScene.swift in Sources */,
+				B0C71D851AE552340002E73D /* Hue.swift in Sources */,
 				B0D9345E1AE39B9F00FE4B8B /* Worm.swift in Sources */,
+				B0C71D871AE552340002E73D /* RandomColor.swift in Sources */,
 				B0D934761AE3A6A100FE4B8B /* SKAction+Extensions.swift in Sources */,
 				B00222D31ADEB97E0077DDF1 /* GameViewController.swift in Sources */,
 				B0D9345A1AE39AA800FE4B8B /* SurvivalPlayground.swift in Sources */,
 				B0D934561AE38EDD00FE4B8B /* Common.swift in Sources */,
 				B0D934791AE3A6A100FE4B8B /* SKNode+Extensions.swift in Sources */,
-				B0D934881AE3A86500FE4B8B /* Hue.swift in Sources */,
 				B0D9348F1AE4E12500FE4B8B /* HarmonyPlayground.swift in Sources */,
 				B00222CD1ADEB97E0077DDF1 /* AppDelegate.swift in Sources */,
 				B0D934731AE3A6A100FE4B8B /* CGPoint+Extensions.swift in Sources */,
@@ -260,10 +263,7 @@
 				B0D9347C1AE3A6A100FE4B8B /* SKTTimingFunctions.swift in Sources */,
 				B0D934741AE3A6A100FE4B8B /* CGVector+Extensions.swift in Sources */,
 				B0D934781AE3A6A100FE4B8B /* SKColor+Extensions.swift in Sources */,
-				B0D934871AE3A86500FE4B8B /* ColorDefinition.swift in Sources */,
 				B0D9347A1AE3A6A100FE4B8B /* SKTAudio.swift in Sources */,
-				B0D9348B1AE3A86500FE4B8B /* RandomColor.swift in Sources */,
-				B0D9348A1AE3A86500FE4B8B /* Luminosity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +376,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,6 +391,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
