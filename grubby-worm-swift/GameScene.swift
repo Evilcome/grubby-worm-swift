@@ -13,7 +13,8 @@ class GameScene: SKScene {
         let centerPoint = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         
         let playground = HarmonyPlayground(size: self.size)
-        playground.position = centerPoint
+//        playground.position = centerPoint
+        playground.position = CGPointZero
         
         addChild(playground)
     }

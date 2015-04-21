@@ -13,6 +13,19 @@ enum Direction {
     case North
 }
 
+struct Location {
+    var row: Int = 0
+    var col: Int = 0
+}
+
+typealias GridSize = Location
+
+struct Constants {
+    static let PlaygroundGridSize = GridSize(row: 32, col: 32)
+    static let visibleBlock = 16
+    static let blockSplit = 1.5
+}
+
 
 
 
