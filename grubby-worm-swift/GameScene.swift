@@ -35,21 +35,20 @@ class GameScene: SKScene {
             let location = touch.locationInNode(playground)
             
             let grids = playground.grids
-            if grids.count > 0 {
-                for grid in grids {
-                    if grid.containsPoint(location) {
-                        let scaleTo = SKAction.scaleTo(0.8, duration: 0.2)
-                        scaleTo.timingMode = .EaseInEaseOut
-                        
-                        let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
-                        let seq = SKAction.sequence([scaleTo, scaleBack])
-                        
-//                        let jump = SKAction.jumpToHeight(10, duration: 0.5, originalPosition: grid.position)
-                        
-                        grid.runAction(seq)
-                    }
+            for grid in grids {
+                if grid.containsPoint(location) {
+                    let scaleTo = SKAction.scaleTo(0.8, duration: 0.2)
+                    scaleTo.timingMode = .EaseInEaseOut
+                    
+                    //                        let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
+                    //                        let seq = SKAction.sequence([scaleTo, scaleBack])
+                    
+                    //                        let jump = SKAction.jumpToHeight(10, duration: 0.5, originalPosition: grid.position)
+                    
+                    grid.runAction(scaleTo)
                 }
             }
+            
 //            let sprite = SKSpriteNode(imageNamed:"logo")
 //            
 //            sprite.position = location
@@ -59,6 +58,32 @@ class GameScene: SKScene {
 //            sprite.runAction(SKAction.repeatActionForever(action))
 //            
 //            self.addChild(sprite)
+        }
+    }
+    
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+        
+    }
+    
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        let grids = playground.grids
+        for grid in grids {
+            if grid.xScale != 1.0 {
+                let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
+                grid.removeAllActions()
+                grid.runAction(scaleBack)
+            }
+        }
+    }
+    
+    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+        let grids = playground.grids
+        for grid in grids {
+            if grid.xScale != 1.0 {
+                let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
+                grid.removeAllActions()
+                grid.runAction(scaleBack)
+            }
         }
     }
    

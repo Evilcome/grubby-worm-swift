@@ -62,10 +62,15 @@ class Playground : SKNode {
         let offsetRow = Int(gridSize.row / -2)
         let offsetCol = Int(gridSize.col / -2)
         
+//        let light = randomColor(hue: .Monochrome, luminosity: .Light)
+        let light = SKColor.whiteColor()
+        let dark = randomColor(hue: .Blue, luminosity: .Light)
+        
         for var i = offsetRow; i != gridSize.row + offsetRow; i++ {
             for var j = offsetCol; j != gridSize.col + offsetCol; j++ {
                 
-                let grid = SKSpriteNode(color: randomColor(luminosity: .Light), size: CGSizeMake(unit, unit))
+                let color = ((i + j) % 2 == 0) ? light : dark
+                let grid = SKSpriteNode(color: color, size: CGSizeMake(unit, unit))
                 
                 let posX = (Constants.blockSplit * CGFloat(i + 1)) + unit * (CGFloat(i) + 0.5)
                 let posY = (Constants.blockSplit * CGFloat(j + 1)) + unit * (CGFloat(j) + 0.5)
@@ -74,7 +79,7 @@ class Playground : SKNode {
                 
                 let row = i - offsetRow
                 let col = j - offsetCol
-                _showLocation(grid, row: row, col: col)
+//                _showLocation(grid, row: row, col: col)
                 _addIntoCache(grid)
                 
                 root.addChild(grid)
