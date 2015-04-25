@@ -13,6 +13,7 @@
 		B00222D61ADEB97E0077DDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00222D41ADEB97E0077DDF1 /* Main.storyboard */; };
 		B00222D81ADEB97E0077DDF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00222D71ADEB97E0077DDF1 /* Images.xcassets */; };
 		B00222DB1ADEB97E0077DDF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00222D91ADEB97E0077DDF1 /* LaunchScreen.xib */; };
+		B06F2EA81AEBE4F800F0BE30 /* ComboBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F2EA71AEBE4F800F0BE30 /* ComboBar.swift */; };
 		B0C71D841AE552340002E73D /* ColorDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71D801AE552340002E73D /* ColorDefinition.swift */; };
 		B0C71D851AE552340002E73D /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71D811AE552340002E73D /* Hue.swift */; };
 		B0C71D861AE552340002E73D /* Luminosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C71D821AE552340002E73D /* Luminosity.swift */; };
@@ -47,6 +48,7 @@
 		B00222D51ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B00222D71ADEB97E0077DDF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B00222DA1ADEB97E0077DDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B06F2EA71AEBE4F800F0BE30 /* ComboBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboBar.swift; sourceTree = "<group>"; };
 		B0C71D801AE552340002E73D /* ColorDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDefinition.swift; sourceTree = "<group>"; };
 		B0C71D811AE552340002E73D /* Hue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
 		B0C71D821AE552340002E73D /* Luminosity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Luminosity.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				B0D934591AE39AA800FE4B8B /* SurvivalPlayground.swift */,
 				B0D9345D1AE39B9F00FE4B8B /* Worm.swift */,
 				B0D9345F1AE39BB100FE4B8B /* GrubbyWorm.swift */,
+				B06F2EA71AEBE4F800F0BE30 /* ComboBar.swift */,
 			);
 			path = "grubby-worm-swift";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				B0D9347B1AE3A6A100FE4B8B /* SKTEffects.swift in Sources */,
 				B0D934721AE3A6A100FE4B8B /* CGFloat+Extensions.swift in Sources */,
 				B0D934601AE39BB100FE4B8B /* GrubbyWorm.swift in Sources */,
+				B06F2EA81AEBE4F800F0BE30 /* ComboBar.swift in Sources */,
 				B0D934541AE37C4100FE4B8B /* Playground.swift in Sources */,
 				B0C71D841AE552340002E73D /* ColorDefinition.swift in Sources */,
 				B00222D11ADEB97E0077DDF1 /* GameScene.swift in Sources */,

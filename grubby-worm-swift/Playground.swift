@@ -63,8 +63,8 @@ class Playground : SKNode {
         let offsetCol = Int(gridSize.col / -2)
         
 //        let light = randomColor(hue: .Monochrome, luminosity: .Light)
-        let light = SKColor.whiteColor()
-        let dark = randomColor(hue: .Blue, luminosity: .Light)
+        let light = SKColorWithRGB(250, 250, 250)
+        let dark = SKColorWithRGB(245, 245, 245)
         
         for var i = offsetRow; i != gridSize.row + offsetRow; i++ {
             for var j = offsetCol; j != gridSize.col + offsetCol; j++ {
