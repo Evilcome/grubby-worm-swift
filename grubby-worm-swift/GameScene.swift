@@ -38,9 +38,13 @@ class GameScene: SKScene {
             if grids.count > 0 {
                 for grid in grids {
                     if grid.containsPoint(location) {
-                        let scaleTo = SKAction.scaleXTo(1.0, duration: 0.5)
-                        let scaleBack = SKAction.scaleXTo(-1.0, duration: 0.5)
+                        let scaleTo = SKAction.scaleTo(0.8, duration: 0.2)
+                        scaleTo.timingMode = .EaseInEaseOut
+                        
+                        let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
                         let seq = SKAction.sequence([scaleTo, scaleBack])
+                        
+//                        let jump = SKAction.jumpToHeight(10, duration: 0.5, originalPosition: grid.position)
                         
                         grid.runAction(seq)
                     }
