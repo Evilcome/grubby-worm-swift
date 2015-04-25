@@ -6,6 +6,8 @@
 //  Copyright (c) 2015年 Wayne. All rights reserved.
 //
 
+import SpriteKit
+
 enum Direction {
     case East
     case South
@@ -23,7 +25,7 @@ typealias GridSize = Location
 struct Constants {
     static let PlaygroundGridSize = GridSize(row: 32, col: 32)
     static let visibleBlock = 16
-    static let blockSplit = 1.5
+    static let blockSplit: CGFloat = 1.2
 }
 
 

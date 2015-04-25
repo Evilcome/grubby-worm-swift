@@ -28,7 +28,8 @@ class GameViewController: UIViewController {
         /* Set the scale mode to scale to fit the window */
         scene.scaleMode = .AspectFill
         
-        scene.backgroundColor = randomColor(luminosity: .Light)
+//        scene.backgroundColor = randomColor(luminosity: .Light)
+        scene.backgroundColor = SKColor.whiteColor()
         
         skView.presentScene(scene)
     }

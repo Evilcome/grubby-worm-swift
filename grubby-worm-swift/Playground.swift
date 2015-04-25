@@ -13,6 +13,10 @@ class Playground : SKNode {
             drawGrid()
         }
     }
+    
+    var root: SKNode
+    
+    var grids: [SKNode]
 
     override var description: String {
         return super.description + " size: {\(size.width), \(size.height)}"
@@ -22,10 +26,13 @@ class Playground : SKNode {
         
         // init property
         self.size = size
+        self.root = SKNode()
+        self.grids = []
         
         super.init()
         
         // call method after super init
+        self.addChild(self.root)
         self.drawGrid()
     }
 
@@ -33,44 +40,46 @@ class Playground : SKNode {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func _showLocation(node: SKNode, row: Int, col: Int) {
+        let num = SKLabelNode()
+        num.text = "\(row).\(col)"
+        num.fontSize = 16
+        num.fontColor = SKColor.blackColor()
+    
+        node.addChild(num)
+    }
+    
+    private func _addIntoCache(node: SKNode) {
+        grids.append(node)
+    }
+    
     func drawGrid() {
-        println(size)
+        root.removeAllChildren()
         
         let gridSize = Constants.PlaygroundGridSize
         
-        let unit = CGFloat(size.width - 2.0) / CGFloat(gridSize.col) - 2.0
+        let unit = CGFloat(size.width - Constants.blockSplit) / CGFloat(Constants.visibleBlock) - Constants.blockSplit
+        let offsetRow = Int(gridSize.row / -2)
+        let offsetCol = Int(gridSize.col / -2)
         
-        let node = SKSpriteNode(color: randomColor(luminosity: .Dark), size: CGSizeMake(unit, unit))
-        
-        for var i = 0; i != gridSize.row; i++ {
-            for var j = 0; j != gridSize.col; j++ {
+        for var i = offsetRow; i != gridSize.row + offsetRow; i++ {
+            for var j = offsetCol; j != gridSize.col + offsetCol; j++ {
                 
-                let grid = node.copy() as! SKSpriteNode
+                let grid = SKSpriteNode(color: randomColor(luminosity: .Light), size: CGSizeMake(unit, unit))
                 
-                let posX = CGFloat(2 * (i + 1)) + unit * (CGFloat(i) + 0.5)
-                let posY = CGFloat(2 * (j + 1)) + unit * (CGFloat(j) + 0.5)
+                let posX = (Constants.blockSplit * CGFloat(i + 1)) + unit * (CGFloat(i) + 0.5)
+                let posY = (Constants.blockSplit * CGFloat(j + 1)) + unit * (CGFloat(j) + 0.5)
                 
                 grid.position = CGPointMake(posX, posY)
                 
-                addChild(grid);
+                let row = i - offsetRow
+                let col = j - offsetCol
+                _showLocation(grid, row: row, col: col)
+                _addIntoCache(grid)
+                
+                root.addChild(grid)
             }
         }
-        
-        let point = SKSpriteNode(color: SKColor.blackColor(), size: CGSizeMake(5, 5))
-        point.position = CGPointZero
-        addChild(point)
-        
-//        for i in 0...50 {
-//            
-//            let node = SKSpriteNode(color: randomColor(luminosity: .Light), size: CGSizeMake(78, 78))
-//            node.anchorPoint = CGPointZero
-//            node.position = CGPointZero + CGPoint(x: 80 * i, y: 0)
-//            
-//            let changeColor = SKAction.colorizeWithColor(randomColor(luminosity: .Light), colorBlendFactor: 1.0, duration: 2)
-//            node.runAction(changeColor)
-//            
-//            self.addChild(node)
-//        }
     }
     
 }
