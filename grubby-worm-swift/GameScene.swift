@@ -10,9 +10,11 @@ import SpriteKit
 
 class GameScene: SKScene {
     var playground: Playground
+    var comboBar: ComboBar
     
     override init(size: CGSize) {
         self.playground = HarmonyPlayground(size: size)
+        self.comboBar = ComboBar(size: size)
         
         super.init(size: size)
     }
@@ -25,7 +27,11 @@ class GameScene: SKScene {
         let centerPoint = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         playground.position = centerPoint
         
+        comboBar.position = centerPoint
+        comboBar.zPosition = 1
+        
         addChild(playground)
+        addChild(comboBar)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -73,6 +79,12 @@ class GameScene: SKScene {
                 grid.removeAllActions()
                 grid.runAction(scaleBack)
             }
+        }
+        
+        if comboBar.isAllActive() {
+            comboBar.upgrade()
+        } else {
+            comboBar.addActive()
         }
     }
     
