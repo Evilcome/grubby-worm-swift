@@ -75,11 +75,11 @@ class ComboBar : SKNode {
         let colorAction = SKAction.colorizeWithColor(activeColor, colorBlendFactor: 1.0, duration: 0.2)
         
         for i in 0..<combo.limit {
-            let light = SKSpriteNode(imageNamed: "ball")
+            var light = SKSpriteNode(imageNamed: "ball-gray")
             let position = CGPointMake(0 + CGFloat(i) * 36, 0)
             
             if(i < combo.active) {
-                light.runAction(colorAction)
+                light = SKSpriteNode(imageNamed: "ball-yellow")
             }
             
             light.position = position
