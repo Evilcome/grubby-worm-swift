@@ -20,8 +20,8 @@ struct AppTheme {
     static let combo_bar_height:CGFloat = 1.0
     
     // color
-    static let tile_light_color = SKColorWithRGB(250, 250, 250)
-    static let tile_dark_color = SKColorWithRGB(245, 245, 245)
+    static let tile_normal_color = SKColorWithRGB(250, 250, 250)
+    static let tile_marble_color = SKColorWithRGB(245, 245, 245)
     
     
 }

@@ -58,12 +58,6 @@ struct ComboCount {
 
 typealias GridSize = Location
 
-struct Constants {
-    static let PlaygroundGridSize = GridSize(row: 32, col: 32)
-    static let visibleBlock = 16
-    static let blockSplit: CGFloat = 0.5
-}
-
 
 
 

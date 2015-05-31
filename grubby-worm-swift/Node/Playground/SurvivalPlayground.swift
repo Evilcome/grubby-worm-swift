@@ -6,4 +6,6 @@
 //  Copyright (c) 2015年 Wayne. All rights reserved.
 //
 
-import Foundation
+class SurvivalPlayground: Playground {
+    
+}

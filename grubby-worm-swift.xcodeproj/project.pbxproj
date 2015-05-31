@@ -21,10 +21,10 @@
 		B0D63F871B184EF600163F2D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D63F7F1B184EF600163F2D /* Tile.swift */; };
 		B0D63F8A1B184EFF00163F2D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D63F891B184EFF00163F2D /* GameScene.swift */; };
 		B0D63F921B18534E00163F2D /* HarmonyPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D63F8C1B18534E00163F2D /* HarmonyPlayground.swift */; };
-		B0D63F931B18534E00163F2D /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D63F8D1B18534E00163F2D /* Playground.swift */; };
 		B0D63F941B18534E00163F2D /* SurvivalPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D63F8E1B18534E00163F2D /* SurvivalPlayground.swift */; };
 		B0D63F951B18534E00163F2D /* GrubbyWorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D63F901B18534E00163F2D /* GrubbyWorm.swift */; };
 		B0D63F961B18534E00163F2D /* Worm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D63F911B18534E00163F2D /* Worm.swift */; };
+		B0D73CF01B1B5E0D00593A17 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D73CEF1B1B5E0D00593A17 /* Playground.swift */; };
 		B0D934721AE3A6A100FE4B8B /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934661AE3A6A100FE4B8B /* CGFloat+Extensions.swift */; };
 		B0D934731AE3A6A100FE4B8B /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934671AE3A6A100FE4B8B /* CGPoint+Extensions.swift */; };
 		B0D934741AE3A6A100FE4B8B /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D934681AE3A6A100FE4B8B /* CGVector+Extensions.swift */; };
@@ -61,10 +61,10 @@
 		B0D63F7F1B184EF600163F2D /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		B0D63F891B184EFF00163F2D /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B0D63F8C1B18534E00163F2D /* HarmonyPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonyPlayground.swift; sourceTree = "<group>"; };
-		B0D63F8D1B18534E00163F2D /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		B0D63F8E1B18534E00163F2D /* SurvivalPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurvivalPlayground.swift; sourceTree = "<group>"; };
 		B0D63F901B18534E00163F2D /* GrubbyWorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubbyWorm.swift; sourceTree = "<group>"; };
 		B0D63F911B18534E00163F2D /* Worm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worm.swift; sourceTree = "<group>"; };
+		B0D73CEF1B1B5E0D00593A17 /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		B0D934661AE3A6A100FE4B8B /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		B0D934671AE3A6A100FE4B8B /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
 		B0D934681AE3A6A100FE4B8B /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		B0D63F8B1B18534E00163F2D /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				B0D73CEF1B1B5E0D00593A17 /* Playground.swift */,
 				B0D63F8C1B18534E00163F2D /* HarmonyPlayground.swift */,
-				B0D63F8D1B18534E00163F2D /* Playground.swift */,
 				B0D63F8E1B18534E00163F2D /* SurvivalPlayground.swift */,
 			);
 			path = Playground;
@@ -291,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C71D861AE552340002E73D /* Luminosity.swift in Sources */,
+				B0D73CF01B1B5E0D00593A17 /* Playground.swift in Sources */,
 				B0B762A41B1B4297008EB589 /* ActionManager.swift in Sources */,
 				B0D63F941B18534E00163F2D /* SurvivalPlayground.swift in Sources */,
 				B0D9347D1AE3A6A100FE4B8B /* Vector3.swift in Sources */,
@@ -302,7 +303,6 @@
 				B0E559071B197758009B8951 /* GameManager.swift in Sources */,
 				B0C71D841AE552340002E73D /* ColorDefinition.swift in Sources */,
 				B0C71D851AE552340002E73D /* Hue.swift in Sources */,
-				B0D63F931B18534E00163F2D /* Playground.swift in Sources */,
 				B0C71D871AE552340002E73D /* RandomColor.swift in Sources */,
 				B0D63F961B18534E00163F2D /* Worm.swift in Sources */,
 				B0D63F951B18534E00163F2D /* GrubbyWorm.swift in Sources */,

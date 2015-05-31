@@ -2,94 +2,54 @@
 //  Playground.swift
 //  grubby-worm-swift
 //
-//  Created by Wayne on 15/4/19.
+//  Created by Wayne on 15/5/31.
 //  Copyright (c) 2015年 Wayne. All rights reserved.
 //
+
 import SpriteKit
 
-class Playground : SKNode {
-    var size: CGSize {
-        didSet {
-            drawGrid()
-        }
-    }
-    
-    var root: SKNode
+class Playground: SKNode {
+   
+    var size: CGSize
     var tiles: [Tile]
-    var grids: [SKNode]
-
-    override var description: String {
-        return super.description + " size: {\(size.width), \(size.height)}"
-    }
     
     init(size: CGSize) {
         
-        // init property
         self.size = size
-        self.root = SKNode()
-        self.grids = []
         self.tiles = []
         
         super.init()
         
-        // call method after super init
-        self.addChild(self.root)
-        self.drawGrid()
+        drawGrid()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func _showLocation(node: SKNode, row: Int, col: Int) {
-        let num = SKLabelNode()
-        num.text = "\(row).\(col)"
-        num.fontSize = 16
-        num.fontColor = SKColor.blackColor()
-    
-        node.addChild(num)
-    }
-    
-    private func _addIntoCache(node: SKNode) {
-        grids.append(node)
-    }
-    
     func drawGrid() {
-        root.removeAllChildren()
+        removeAllChildren()
+        tiles.removeAll()
         
-        let gridSize = Constants.PlaygroundGridSize
+        let gridSize = AppTheme.playground_size
         
-        println("old size: \(size)")
-        let unit = CGFloat(size.width - Constants.blockSplit) / CGFloat(Constants.visibleBlock) - Constants.blockSplit
+        let rowFrom = Int(-gridSize.row / 2)
+        let colFrom = Int(-gridSize.col / 2)
         
-        println("old unit: \(unit)")
-        
-        let offsetRow = Int(gridSize.row / -2)
-        let offsetCol = Int(gridSize.col / -2)
-        
-//        let light = randomColor(hue: .Monochrome, luminosity: .Light)
-        let light = SKColorWithRGB(250, 250, 250)
-        let dark = SKColorWithRGB(245, 245, 245)
-        
-        for var i = offsetRow; i != gridSize.row + offsetRow; i++ {
-            for var j = offsetCol; j != gridSize.col + offsetCol; j++ {
+        for i in rowFrom..<(gridSize.row + rowFrom) {
+            for j in colFrom..<(gridSize.col + colFrom) {
+                let style: TileStyle = ((i + j) % 2 == 0) ? .Normal : .Marble
+                let tile = Tile(location: GridSize(row: i, col: j), style: style)
                 
-                let color = ((i + j) % 2 == 0) ? light : dark
-                let grid = SKSpriteNode(color: color, size: CGSizeMake(unit, unit))
+                let posX = (AppTheme.tile_interval * CGFloat(i + 1)) + tile.size.width * (CGFloat(i) + 0.5)
+                let posY = (AppTheme.tile_interval * CGFloat(j + 1)) + tile.size.height * (CGFloat(j) + 0.5)
                 
-                let posX = (Constants.blockSplit * CGFloat(i + 1)) + unit * (CGFloat(i) + 0.5)
-                let posY = (Constants.blockSplit * CGFloat(j + 1)) + unit * (CGFloat(j) + 0.5)
+                tile.position = CGPointMake(posX, posY)
                 
-                grid.position = CGPointMake(posX, posY)
-                
-                let row = i - offsetRow
-                let col = j - offsetCol
-//                _showLocation(grid, row: row, col: col)
-                _addIntoCache(grid)
-                
-                root.addChild(grid)
+                addChild(tile)
+                tiles.append(tile)
             }
         }
     }
-    
+
 }

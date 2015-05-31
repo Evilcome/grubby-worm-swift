@@ -41,13 +41,11 @@ class GameScene: SKScene {
         for touch in (touches as! Set<UITouch>) {
             let location = touch.locationInNode(playground)
             
-            let grids = playground!.grids
-            for grid in grids {
-                if grid.containsPoint(location) {
-                    let scaleTo = SKAction.scaleTo(0.8, duration: 0.2)
-                    scaleTo.timingMode = .EaseInEaseOut
-                    
-                    grid.runAction(scaleTo)
+            if let tiles = playground?.tiles {
+                for tile in tiles {
+                    if tile.containsPoint(location) {
+                        tile.runPressAction()
+                    }
                 }
             }
         }
@@ -58,23 +56,23 @@ class GameScene: SKScene {
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-        let grids = playground!.grids
-        for grid in grids {
-            if grid.xScale != 1.0 {
-                let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
-                grid.removeAllActions()
-                grid.runAction(scaleBack)
+        
+        if let tiles = playground?.tiles {
+            for tile in tiles {
+                if tile.xScale != 1.0 {
+                    tile.runUpliftAction()
+                }
             }
         }
     }
     
     override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
-        let grids = playground!.grids
-        for grid in grids {
-            if grid.xScale != 1.0 {
-                let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
-                grid.removeAllActions()
-                grid.runAction(scaleBack)
+        
+        if let tiles = playground?.tiles {
+            for tile in tiles {
+                if tile.xScale != 1.0 {
+                    tile.runUpliftAction()
+                }
             }
         }
     }
