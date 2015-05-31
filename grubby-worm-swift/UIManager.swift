@@ -21,7 +21,7 @@ class UIManager {
     
     func parseUnit(window: UIWindow) {
         winSize = window.frame.size
-        unit = CGFloat(winSize.height - AppTheme.tile_interval) / CGFloat(AppTheme.visible_tile) - AppTheme.tile_interval
+        unit = (winSize.height - (AppTheme.visible_tile + 1) * AppTheme.tile_interval) / AppTheme.visible_tile
     }
     
     func length(count: Int) -> CGFloat {

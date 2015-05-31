@@ -23,7 +23,7 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         
         playground = HarmonyPlayground(size: size)
-        comboBar = ComboBar(size: size)
+        comboBar = ComboBar(combo: ComboCount(active: 0, limit: 6))
         
         let center = CGPoint(x: frame.midX, y: frame.midY)
         playground?.position = center
@@ -63,6 +63,12 @@ class GameScene: SKScene {
                     tile.runUpliftAction()
                 }
             }
+        }
+        
+        if comboBar!.isAllActive() {
+            comboBar?.upgrade()
+        } else {
+            comboBar?.addActive()
         }
     }
     

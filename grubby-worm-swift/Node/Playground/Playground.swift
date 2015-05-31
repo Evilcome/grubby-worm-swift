@@ -41,8 +41,8 @@ class Playground: SKNode {
                 let style: TileStyle = ((i + j) % 2 == 0) ? .Normal : .Marble
                 let tile = Tile(location: GridSize(row: i, col: j), style: style)
                 
-                let posX = (AppTheme.tile_interval * CGFloat(i + 1)) + tile.size.width * (CGFloat(i) + 0.5)
-                let posY = (AppTheme.tile_interval * CGFloat(j + 1)) + tile.size.height * (CGFloat(j) + 0.5)
+                let posX = (AppTheme.tile_interval + tile.size.width) * (CGFloat(i) + 0.5)
+                let posY = (AppTheme.tile_interval + tile.size.height) * (CGFloat(j) + 0.5)
                 
                 tile.position = CGPointMake(posX, posY)
                 
