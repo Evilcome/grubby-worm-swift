@@ -7,15 +7,16 @@
 //
 import SpriteKit
 
-struct ComboBarConstants{
-    static let defaultCombo = ComboCount(active: 0, limit: 6)
-    static let defaultPadding = Padding(all: 10)
-    static let maxComboLimit = 12
-}
-
 class ComboBar : SKNode {
     
+    struct ComboBarConstants {
+        static let defaultCombo = ComboCount(active: 0, limit: 6)
+        static let defaultPadding = Padding(all: 10)
+        static let maxComboLimit = 12
+    }
+    
     var size: CGSize
+    var ballSize: CGSize
     
     var ballWrap: SKNode
     
@@ -29,6 +30,9 @@ class ComboBar : SKNode {
         self.size = size
         self.ballWrap = SKNode()
         self.combo = ComboBarConstants.defaultCombo
+        
+        let height = UIManager.sharedManager.length(AppTheme.combo_bar_height)
+        self.ballSize = CGSizeMake(height, height)
         
         super.init()
         
@@ -63,7 +67,7 @@ class ComboBar : SKNode {
     }
     
     func updateBoard() {
-        let board = SKSpriteNode(color: SKColor.whiteColor(), size: CGSizeMake(size.width, ComboBarConstants.defaultPadding.top * 2))
+        let board = SKSpriteNode(color: SKColor.whiteColor(), size: CGSizeMake(size.width, ComboBarConstants.defaultPadding.top * 2 + ballSize.height))
         addChild(board)
     }
 
@@ -71,22 +75,33 @@ class ComboBar : SKNode {
         ballWrap.removeAllChildren()
         ballWrap.removeFromParent()
         
-        let activeColor = randomColor(hue: .Red, luminosity: .Dark)
-        let colorAction = SKAction.colorizeWithColor(activeColor, colorBlendFactor: 1.0, duration: 0.2)
-        
+        let x = CGFloat(Int(combo.limit / 2))
+        let y = CGFloat(combo.limit % 2)
+        let split = 1.5 * ballSize.width
+        var offsetX = 1.5 * ballSize.width * x
+        offsetX += split * (x + y * 0.5 - 0.5)
+        let posY = -ballSize.height / 2 + ComboBarConstants.defaultPadding.top / 2
         for i in 0..<combo.limit {
-            var light = SKSpriteNode(imageNamed: "ball-gray")
-            let position = CGPointMake(0 + CGFloat(i) * 36, 0)
+            var light: SKSpriteNode
+            let posX = -offsetX / 2 + CGFloat(i) * split
+            let position = CGPointMake(posX, posY)
             
             if(i < combo.active) {
                 light = SKSpriteNode(imageNamed: "ball-yellow")
+            } else {
+                light = SKSpriteNode(imageNamed: "ball-gray")
             }
-            
+    
+            light.size = ballSize
             light.position = position
             ballWrap.addChild(light)
         }
         
         addChild(ballWrap)
+    }
+    
+    func shake(ball: SKSpriteNode) {
+        
     }
 }
 

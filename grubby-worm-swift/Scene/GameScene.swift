@@ -9,13 +9,10 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    var playground: Playground
-    var comboBar: ComboBar
+    var playground: Playground?
+    var comboBar: ComboBar?
     
     override init(size: CGSize) {
-        self.playground = HarmonyPlayground(size: size)
-        self.comboBar = ComboBar(size: size)
-        
         super.init(size: size)
     }
 
@@ -24,14 +21,18 @@ class GameScene: SKScene {
     }
     
     override func didMoveToView(view: SKView) {
-        let centerPoint = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
-        playground.position = centerPoint
         
-        comboBar.position = centerPoint
-        comboBar.zPosition = 1
+        playground = HarmonyPlayground(size: size)
+        comboBar = ComboBar(size: size)
         
-        addChild(playground)
-        addChild(comboBar)
+        let center = CGPoint(x: frame.midX, y: frame.midY)
+        playground?.position = center
+        addChild(playground!)
+        
+        let topCenter = center + CGPoint(x: 0, y: frame.midY)
+        comboBar?.position = topCenter
+        comboBar?.zPosition = 1
+        addChild(comboBar!)
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -40,30 +41,15 @@ class GameScene: SKScene {
         for touch in (touches as! Set<UITouch>) {
             let location = touch.locationInNode(playground)
             
-            let grids = playground.grids
+            let grids = playground!.grids
             for grid in grids {
                 if grid.containsPoint(location) {
                     let scaleTo = SKAction.scaleTo(0.8, duration: 0.2)
                     scaleTo.timingMode = .EaseInEaseOut
                     
-                    //                        let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
-                    //                        let seq = SKAction.sequence([scaleTo, scaleBack])
-                    
-                    //                        let jump = SKAction.jumpToHeight(10, duration: 0.5, originalPosition: grid.position)
-                    
                     grid.runAction(scaleTo)
                 }
             }
-            
-//            let sprite = SKSpriteNode(imageNamed:"logo")
-//            
-//            sprite.position = location
-//            
-//            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-//            
-//            sprite.runAction(SKAction.repeatActionForever(action))
-//            
-//            self.addChild(sprite)
         }
     }
     
@@ -72,7 +58,7 @@ class GameScene: SKScene {
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-        let grids = playground.grids
+        let grids = playground!.grids
         for grid in grids {
             if grid.xScale != 1.0 {
                 let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
@@ -80,16 +66,10 @@ class GameScene: SKScene {
                 grid.runAction(scaleBack)
             }
         }
-        
-        if comboBar.isAllActive() {
-            comboBar.upgrade()
-        } else {
-            comboBar.addActive()
-        }
     }
     
     override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
-        let grids = playground.grids
+        let grids = playground!.grids
         for grid in grids {
             if grid.xScale != 1.0 {
                 let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)

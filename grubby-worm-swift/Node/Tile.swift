@@ -8,22 +8,21 @@
 
 import SpriteKit
 
-struct TileConstants{
-    static let light = SKColorWithRGB(250, 250, 250)
-    static let dark = SKColorWithRGB(245, 245, 245)
-}
-
-enum TileColor {
-    case Light
-    case Dark
+enum TileStyle {
+    case Normal
+    case Marble
 }
 
 class Tile : SKNode {
     
+    var style: TileStyle = .Normal
     var location: Location
+    var size: CGSize
     
-    init(color: TileColor, size: CGSize, location: Location) {
+    init(size: CGSize, location: Location, style: TileStyle = .Normal) {
+        self.style = style
         self.location = location
+        self.size = size
         
         super.init()
     }
@@ -31,6 +30,4 @@ class Tile : SKNode {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
 }

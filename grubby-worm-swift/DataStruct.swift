@@ -1,8 +1,8 @@
 //
-//  Common.swift
+//  DataStruct.swift
 //  grubby-worm-swift
 //
-//  Created by Wayne on 15/4/19.
+//  Created by Wayne on 15/5/30.
 //  Copyright (c) 2015年 Wayne. All rights reserved.
 //
 
@@ -14,7 +14,6 @@ enum Direction {
     case West
     case North
 }
-
 
 struct Padding {
     var top: CGFloat
@@ -38,7 +37,6 @@ struct Padding {
 }
 
 typealias Margin = Padding
-
 
 struct Location {
     var row: Int = 0
@@ -65,6 +63,7 @@ struct Constants {
     static let visibleBlock = 16
     static let blockSplit: CGFloat = 0.5
 }
+
 
 
 

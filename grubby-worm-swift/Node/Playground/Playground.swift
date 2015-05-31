@@ -15,7 +15,7 @@ class Playground : SKNode {
     }
     
     var root: SKNode
-    
+    var tiles: [Tile]
     var grids: [SKNode]
 
     override var description: String {
@@ -28,6 +28,7 @@ class Playground : SKNode {
         self.size = size
         self.root = SKNode()
         self.grids = []
+        self.tiles = []
         
         super.init()
         
@@ -58,7 +59,11 @@ class Playground : SKNode {
         
         let gridSize = Constants.PlaygroundGridSize
         
+        println("old size: \(size)")
         let unit = CGFloat(size.width - Constants.blockSplit) / CGFloat(Constants.visibleBlock) - Constants.blockSplit
+        
+        println("old unit: \(unit)")
+        
         let offsetRow = Int(gridSize.row / -2)
         let offsetCol = Int(gridSize.col / -2)
         
