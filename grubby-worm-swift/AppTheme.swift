@@ -22,7 +22,7 @@ struct AppTheme {
     
     // color
     static let app_main_color = randomColor(hue: .Blue, luminosity: .Dark)
-    static let combo_bar_color = SKColorWithRGB(250, 250, 250)
+    static let combo_bar_color = SKColorWithRGB(255, 255, 255)
     
     static let tile_normal_color = SKColorWithRGB(250, 250, 250)
     static let tile_marble_color = SKColorWithRGB(245, 245, 245)

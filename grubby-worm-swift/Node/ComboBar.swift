@@ -90,6 +90,7 @@ class ComboBar : SKNode {
             
             let posX = -offsetX + CGFloat(i) * ballSize.width * 1.5
             ball.position = CGPointMake(posX, 0)
+            ball.size = ballSize
             
             ballWrap.addChild(ball)
         }
