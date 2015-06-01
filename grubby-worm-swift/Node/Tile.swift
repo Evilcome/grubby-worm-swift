@@ -32,6 +32,7 @@ class Tile : SKSpriteNode {
         super.init(texture: nil, color: SKColor.clearColor(), size: size)
         
         renderStyle()
+        renderLocation()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -49,6 +50,14 @@ class Tile : SKSpriteNode {
         }
     }
     
+    func renderLocation() {
+        let label = SKLabelNode(text: "\(location.row), \(location.col)")
+        label.fontColor = UIColor.blackColor()
+        label.fontSize = 8
+        
+        addChild(label)
+    }
+    
     func runPressAction() {
         let scaleTo = SKAction.scaleTo(0.8, duration: 0.2)
         scaleTo.timingMode = .EaseInEaseOut
@@ -60,5 +69,19 @@ class Tile : SKSpriteNode {
         let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
         removeAllActions()
         runAction(scaleBack)
+    }
+    
+    func runSwipeAction(delay: NSTimeInterval = 0) {
+        let delay = SKAction.waitForDuration(delay)
+        
+        let scaleTo = SKAction.scaleTo(0.8, duration: 0.2)
+        scaleTo.timingMode = .EaseInEaseOut
+
+        let scaleBack = SKAction.scaleTo(1.0, duration: 0.1)
+        
+        let seq = SKAction.sequence([delay, scaleTo, scaleBack])
+        
+        removeAllActions()
+        runAction(seq)
     }
 }

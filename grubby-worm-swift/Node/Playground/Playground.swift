@@ -51,5 +51,39 @@ class Playground: SKNode {
             }
         }
     }
+    
+    func tileByLocation(location: Location) -> Tile? {
+        var ret: Tile?
+        
+        for tile in tiles {
+            if tile.location.row == location.row && tile.location.col == location.col {
+                ret = tile
+            }
+        }
+        
+        return ret
+    }
+    
+    func tilesInDirect(tile: Tile, direction: Direction) -> [Tile] {
+        var ret = [Tile]()
+        
+        ret.append(tile)
+        
+        switch direction {
+        case .North:
+            var location = tile.location
+            for i in 0...4 {
+                location.col++
+                if let haveTile = tileByLocation(location) {
+                    ret.append(haveTile)
+                }
+            }
+            break
+        default:
+            break
+        }
+        
+        return ret
+    }
 
 }
