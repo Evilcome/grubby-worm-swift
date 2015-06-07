@@ -43,6 +43,9 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
         playground?.position = center
         addChild(playground!)
         
+        let worm = GrubbyWorm()
+        playground?.addWorm(worm, location: Location(row: 0, col: 0))
+        
         let topCenter = center + CGPoint(x: 0, y: frame.midY)
         comboBar?.position = topCenter
         comboBar?.zPosition = 1

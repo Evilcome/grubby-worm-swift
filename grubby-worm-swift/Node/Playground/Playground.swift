@@ -86,4 +86,12 @@ class Playground: SKNode {
         return ret
     }
 
+    func addWorm(worm: Worm, location: Location) {
+        worm.playground = self
+        addChild(worm)
+        
+        if let tile = tileByLocation(location) {
+            worm.position = tile.position
+        }
+    }
 }

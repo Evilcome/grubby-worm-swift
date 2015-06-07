@@ -32,7 +32,7 @@ class Tile : SKSpriteNode {
         super.init(texture: nil, color: SKColor.clearColor(), size: size)
         
         renderStyle()
-        renderLocation()
+//        renderLocation()
     }
 
     required init?(coder aDecoder: NSCoder) {
