@@ -83,19 +83,19 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
         let direction = recognizer.direction
         
         if direction == .Up {
-            
+            targetWorm?.turn(.North)
         }
         
         if direction == .Right {
-            
+            targetWorm?.turn(.East)
         }
         
         if direction == .Down {
-            
+            targetWorm?.turn(.South)
         }
         
         if direction == .Left {
-            
+            targetWorm?.turn(.West)
         }
     }
 }

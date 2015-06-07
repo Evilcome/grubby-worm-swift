@@ -93,5 +93,7 @@ class Playground: SKNode {
         if let tile = tileByLocation(location) {
             worm.position = tile.position
         }
+        
+        worm.crawl()
     }
 }

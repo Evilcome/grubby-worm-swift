@@ -13,7 +13,7 @@ class GrubbyWorm: Worm {
     override init() {
         super.init()
         
-        info = WormInfo(name: "Grubby Worm", speed: 0.5, status: .Normal, type: .Grubby)
+        info = WormInfo(name: "Grubby Worm", speed: 1.0, status: .Normal, type: .Grubby)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,6 +30,14 @@ class GrubbyWorm: Worm {
     }
     
     override func crawl() {
+        NSTimer.scheduledTimerWithTimeInterval(info.speed, target: self, selector: "doCrawl", userInfo: nil, repeats: true)
+    }
+    
+    override func turn(direction: Direction) {
+        
+    }
+    
+    func doCrawl() {
         
     }
 }

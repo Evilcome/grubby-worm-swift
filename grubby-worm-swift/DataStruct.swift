@@ -68,7 +68,7 @@ enum WormType {
 
 struct WormInfo {
     var name: String?
-    var speed: CGFloat
+    var speed: NSTimeInterval
     var status: WormStatus
     var type: WormType
 }
