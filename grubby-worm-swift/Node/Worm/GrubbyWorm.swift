@@ -13,7 +13,7 @@ class GrubbyWorm: Worm {
     override init() {
         super.init()
         
-        info = WormInfo(name: "Grubby Worm", speed: 0.5, foot: 5, status: .Normal, type: .Grubby)
+        info = WormInfo(name: "Grubby Worm", speed: 0.2, foot: 5, status: .Normal, type: .Grubby)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -24,9 +24,9 @@ class GrubbyWorm: Worm {
         let length = UIManager.sharedManager.length(AppTheme.grubby_worm_height)
         let somiteSize = CGSizeMake(length, length)
         for i in 0..<info.foot {
-            let node = SKSpriteNode(color: AppTheme.app_main_color, size: somiteSize)
+            let node = SKSpriteNode(color: AppTheme.grubby_worm_color, size: somiteSize)
             addChild(node)
-            nodes.append(node)
+            somites.append(node)
         }
     }
     
