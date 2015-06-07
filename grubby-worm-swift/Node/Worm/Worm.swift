@@ -12,18 +12,19 @@ import Foundation
 class Worm: SKNode {
     
     weak var playground: Playground?
+    var nodes: [SKSpriteNode]
     var locations: [Location]
     var info: WormInfo
     var direction: Direction
+    var timer: NSTimer?
     
     override init() {
+        nodes = []
         locations = []
-        info = WormInfo(name: "", speed: 0, status: .Normal, type: .Normal)
+        info = WormInfo(name: "", speed: 0, foot: 0, status: .Normal, type: .Normal)
         direction = .East
         
         super.init()
-        
-        initWorm()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,5 +41,32 @@ class Worm: SKNode {
     
     func turn(direction: Direction) {
         
+    }
+    
+    func initLocations(location: Location) {
+        
+    }
+    
+    func renderNodesPosition() {
+        for i in 0..<info.foot {
+            if let tile = playground?.tileByLocation(locations[i]) {
+                nodes[i].position = tile.position
+            }
+        }
+    }
+    
+    func getNextLocation(now: Location) -> Location {
+        switch direction {
+        case .East:
+            return now.right()
+        case .West:
+            return now.left()
+        case .South:
+            return now.down()
+        case .North:
+            return now.up()
+        default:
+            break
+        }
     }
 }

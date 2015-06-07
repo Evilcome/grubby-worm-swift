@@ -13,6 +13,21 @@ enum Direction {
     case South
     case West
     case North
+    
+    func refect() -> Direction {
+        switch self {
+        case .East:
+            return .West
+        case .South:
+            return .North
+        case .West:
+            return .East
+        case .North:
+            return .South
+        default:
+            break
+        }
+    }
 }
 
 struct Padding {
@@ -41,6 +56,22 @@ typealias Margin = Padding
 struct Location {
     var row: Int = 0
     var col: Int = 0
+    
+    func up() -> Location {
+        return Location(row: self.row, col: self.col + 1)
+    }
+    
+    func down() -> Location {
+        return Location(row: self.row, col: self.col - 1)
+    }
+    
+    func left() -> Location {
+        return Location(row: self.row - 1, col: self.col)
+    }
+    
+    func right() -> Location {
+        return Location(row: self.row + 1, col: self.col)
+    }
 }
 
 struct ComboCount {
@@ -69,6 +100,7 @@ enum WormType {
 struct WormInfo {
     var name: String?
     var speed: NSTimeInterval
+    var foot: Int
     var status: WormStatus
     var type: WormType
 }

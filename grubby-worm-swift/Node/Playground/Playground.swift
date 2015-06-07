@@ -58,6 +58,7 @@ class Playground: SKNode {
         for tile in tiles {
             if tile.location.row == location.row && tile.location.col == location.col {
                 ret = tile
+                break
             }
         }
         
@@ -88,11 +89,9 @@ class Playground: SKNode {
 
     func addWorm(worm: Worm, location: Location) {
         worm.playground = self
+        worm.initWorm()
+        worm.initLocations(location)
         addChild(worm)
-        
-        if let tile = tileByLocation(location) {
-            worm.position = tile.position
-        }
         
         worm.crawl()
     }

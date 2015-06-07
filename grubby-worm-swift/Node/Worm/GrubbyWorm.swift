@@ -13,7 +13,7 @@ class GrubbyWorm: Worm {
     override init() {
         super.init()
         
-        info = WormInfo(name: "Grubby Worm", speed: 1.0, status: .Normal, type: .Grubby)
+        info = WormInfo(name: "Grubby Worm", speed: 0.5, foot: 5, status: .Normal, type: .Grubby)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,21 +23,52 @@ class GrubbyWorm: Worm {
     override func initWorm() {
         let length = UIManager.sharedManager.length(AppTheme.grubby_worm_height)
         let somiteSize = CGSizeMake(length, length)
-        for i in 0..<5 {
+        for i in 0..<info.foot {
             let node = SKSpriteNode(color: AppTheme.app_main_color, size: somiteSize)
             addChild(node)
+            nodes.append(node)
         }
     }
     
     override func crawl() {
-        NSTimer.scheduledTimerWithTimeInterval(info.speed, target: self, selector: "doCrawl", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(info.speed, target: self, selector: "doCrawl", userInfo: nil, repeats: true)
     }
     
-    override func turn(direction: Direction) {
+    override func turn(target: Direction) {
+        if direction == target.refect() {
+            return
+        }
         
+        if direction == target {
+            return
+        }
+        
+        direction = target
+        doCrawl()
+        timer?.invalidate()
+        
+        crawl()
+    }
+    
+    override func initLocations(location: Location) {
+        locations.append(location)
+        locations.append(location.left())
+        locations.append(location.left().down())
+        locations.append(location.left().down().down())
+        locations.append(location.left().down().down().left())
+        
+        renderNodesPosition()
     }
     
     func doCrawl() {
+        var loc = [Location]()
+        loc.append(getNextLocation(locations[0]))
         
+        for i in 1..<info.foot {
+            loc.append(locations[i - 1])
+        }
+        
+        locations = loc
+        renderNodesPosition()
     }
 }
