@@ -56,6 +56,23 @@ struct ComboCount {
     var limit: Int
 }
 
+enum WormStatus {
+    case Normal
+    case Crazy
+}
+
+enum WormType {
+    case Normal
+    case Grubby
+}
+
+struct WormInfo {
+    var name: String?
+    var speed: CGFloat
+    var status: WormStatus
+    var type: WormType
+}
+
 typealias GridSize = Location
 
 

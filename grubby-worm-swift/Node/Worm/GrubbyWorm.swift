@@ -12,6 +12,8 @@ class GrubbyWorm: Worm {
     
     override init() {
         super.init()
+        
+        info = WormInfo(name: "Grubby Worm", speed: 0.5, status: .Normal, type: .Grubby)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -25,5 +27,9 @@ class GrubbyWorm: Worm {
             let node = SKSpriteNode(color: AppTheme.app_main_color, size: somiteSize)
             addChild(node)
         }
+    }
+    
+    override func crawl() {
+        
     }
 }

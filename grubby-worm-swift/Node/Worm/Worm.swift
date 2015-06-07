@@ -12,13 +12,16 @@ class Worm: SKNode {
     
     weak var playground: Playground?
     var locations: [Location]
+    var info: WormInfo
     
     override init() {
         locations = []
+        info = WormInfo(name: "", speed: 0, status: .Normal, type: .Normal)
         
         super.init()
         
         initWorm()
+        crawl()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,6 +29,10 @@ class Worm: SKNode {
     }
     
     func initWorm() {
+        
+    }
+    
+    func crawl() {
         
     }
 }
