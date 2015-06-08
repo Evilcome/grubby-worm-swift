@@ -11,7 +11,7 @@ import SpriteKit
 struct AppTheme {
     
     // tile
-    static let playground_size = GridSize(row: 32, col: 32)
+    static let playground_size = GridSize(row: 10, col: 10)
     static let tile_interval: CGFloat = 0.5
     static let visible_tile:CGFloat = 10
     

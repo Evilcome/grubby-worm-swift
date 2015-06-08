@@ -72,6 +72,38 @@ struct Location {
     func right() -> Location {
         return Location(row: self.row + 1, col: self.col)
     }
+    
+    func up(inRange: GridSizeRange) -> Location {
+        if self.col == inRange.to.col {
+            return Location(row: self.row, col: inRange.from.col)
+        } else {
+            return self.up()
+        }
+    }
+    
+    func down(inRange: GridSizeRange) -> Location {
+        if self.col == inRange.from.col {
+            return Location(row: self.row, col: inRange.to.col)
+        } else {
+            return self.down()
+        }
+    }
+    
+    func left(inRange: GridSizeRange) -> Location {
+        if self.row == inRange.from.row {
+            return Location(row: inRange.to.row, col: self.col)
+        } else {
+            return self.left()
+        }
+    }
+    
+    func right(inRange: GridSizeRange) -> Location {
+        if self.row == inRange.to.row {
+            return Location(row: inRange.from.row, col: self.col)
+        } else {
+            return self.right()
+        }
+    }
 }
 
 struct ComboCount {
@@ -107,6 +139,10 @@ struct WormInfo {
 
 typealias GridSize = Location
 
+struct GridSizeRange {
+    var from: GridSize
+    var to: GridSize
+}
 
 
 

@@ -10,6 +10,7 @@ import SpriteKit
 
 class Playground: SKNode {
    
+    var gridSize = AppTheme.playground_size
     var size: CGSize
     var tiles: [Tile]
     
@@ -30,14 +31,11 @@ class Playground: SKNode {
     func drawGrid() {
         removeAllChildren()
         tiles.removeAll()
+
+        let range = getGridSizeRange()
         
-        let gridSize = AppTheme.playground_size
-        
-        let rowFrom = Int(-gridSize.row / 2)
-        let colFrom = Int(-gridSize.col / 2)
-        
-        for i in rowFrom..<(gridSize.row + rowFrom) {
-            for j in colFrom..<(gridSize.col + colFrom) {
+        for i in range.from.row...range.to.row {
+            for j in range.from.col...range.to.col {
                 let style: TileStyle = ((i + j) % 2 == 0) ? .Normal : .Marble
                 let tile = Tile(location: GridSize(row: i, col: j), style: style)
                 
@@ -94,5 +92,12 @@ class Playground: SKNode {
         addChild(worm)
         
         worm.crawl()
+    }
+    
+    func getGridSizeRange() -> GridSizeRange {
+        let from = GridSize(row: Int(-gridSize.row / 2), col: Int(-gridSize.col / 2))
+        let to = GridSize(row: from.row + gridSize.row - 1, col: from.col + gridSize.col - 1)
+        
+        return GridSizeRange(from: from, to: to)
     }
 }

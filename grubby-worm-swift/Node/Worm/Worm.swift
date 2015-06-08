@@ -56,17 +56,32 @@ class Worm: SKNode {
     }
     
     func getNextLocation(now: Location) -> Location {
-        switch direction {
-        case .East:
-            return now.right()
-        case .West:
-            return now.left()
-        case .South:
-            return now.down()
-        case .North:
-            return now.up()
-        default:
-            break
+        if let range = playground?.getGridSizeRange() {
+            switch direction {
+            case .East:
+                return now.right(range)
+            case .West:
+                return now.left(range)
+            case .South:
+                return now.down(range)
+            case .North:
+                return now.up(range)
+            default:
+                break
+            }
+        } else {
+            switch direction {
+            case .East:
+                return now.right()
+            case .West:
+                return now.left()
+            case .South:
+                return now.down()
+            case .North:
+                return now.up()
+            default:
+                break
+            }
         }
     }
 }
