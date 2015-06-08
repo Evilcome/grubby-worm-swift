@@ -13,7 +13,7 @@ class GrubbyWorm: Worm {
     override init() {
         super.init()
         
-        info = WormInfo(name: "Grubby Worm", speed: 0.2, foot: 5, status: .Normal, type: .Grubby)
+        info = WormInfo(name: "Grubby Worm", speed: 0.1, foot: 5, status: .Normal, type: .Grubby)
     }
     
     required init?(coder aDecoder: NSCoder) {

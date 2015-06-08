@@ -29,5 +29,5 @@ struct AppTheme {
     static let tile_normal_color = SKColorWithRGB(250, 250, 250)
     static let tile_marble_color = SKColorWithRGB(245, 245, 245)
     
-    static let grubby_worm_color = SKColorWithRGB(120, 230, 22)
+    static let grubby_worm_color = SKColorWithRGB(251, 63, 72)
 }
