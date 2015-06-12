@@ -13,6 +13,8 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
     var comboBar: ComboBar?
     var targetWorm: Worm?
     
+    var panStartPos = CGPointZero
+    
     override init(size: CGSize) {
         super.init(size: size)
     }
@@ -64,38 +66,40 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
     }
     
     func addSwipeGestureRecognizer(view: SKView) {
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: "handleSwipe:")
-        swipeUp.direction = .Up
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: "handleSwipe:")
-        swipeRight.direction = .Right
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: "handleSwipe:")
-        swipeDown.direction = .Down
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: "handleSwipe:")
-        swipeLeft.direction = .Left
-        
-        view.addGestureRecognizer(swipeUp)
-        view.addGestureRecognizer(swipeRight)
-        view.addGestureRecognizer(swipeDown)
-        view.addGestureRecognizer(swipeLeft)
+        let panGesture = UIPanGestureRecognizer(target: self, action: "handlePan:")
+        view.addGestureRecognizer(panGesture)
     }
     
-    func handleSwipe(recognizer: UISwipeGestureRecognizer) {
-        let direction = recognizer.direction
-        
-        if direction == .Up {
-            targetWorm?.turn(.North)
+    func handlePan(sender: UIPanGestureRecognizer) {
+        if sender.state == .Began {
+            panStartPos = sender.locationInView(view)
         }
         
-        if direction == .Right {
-            targetWorm?.turn(.East)
-        }
-        
-        if direction == .Down {
-            targetWorm?.turn(.South)
-        }
-        
-        if direction == .Left {
-            targetWorm?.turn(.West)
+        if sender.state == .Ended {
+            let offsetPos = sender.locationInView(view) - panStartPos
+            if offsetPos.length() > 15 {
+                let angle = offsetPos.angle
+                
+                // right -π/6 ~ π/6
+                if angle >= -π/6 && angle <= π/6 {
+                    targetWorm?.turn(.East)
+                }
+                
+                // up
+                if angle <= -π*2/6 && angle >= -π*4/6 {
+                    targetWorm?.turn(.North)
+                }
+                
+                // left
+                if angle <= -π*5/6 || angle >= π*5/6 {
+                    targetWorm?.turn(.West)
+                }
+                
+                // down
+                if angle <= π*4/6 && angle >= π*2/6 {
+                    targetWorm?.turn(.South)
+                }
+            }
         }
     }
 }
