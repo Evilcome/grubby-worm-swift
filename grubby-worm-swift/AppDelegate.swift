@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  grubby-worm-swift
 //
-//  Created by Wayne on 15/4/15.
-//  Copyright (c) 2015年 Wayne. All rights reserved.
+//  Created by Wayne on 15/8/8.
+//  Copyright (c) 2015年 SWIFT.HOW. All rights reserved.
 //
 
 import UIKit
@@ -16,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        UIManager.sharedManager.parseUnit(window!)
-        
         return true
     }
 
