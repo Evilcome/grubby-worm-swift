@@ -14,6 +14,8 @@
 		B06FDE041B7652D500679570 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06FDE021B7652D500679570 /* LaunchScreen.xib */; };
 		B06FDE101B7652D500679570 /* grubby_worm_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06FDE0F1B7652D500679570 /* grubby_worm_swiftTests.swift */; };
 		B06FDE1A1B76557F00679570 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B06FDE191B76557F00679570 /* README.md */; };
+		B071920F1B77A4A900BD8457 /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B071920E1B77A4A900BD8457 /* DataStruct.swift */; };
+		B07192111B77A4BC00BD8457 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07192101B77A4BC00BD8457 /* AppTheme.swift */; };
 		B0A5AC721B765D5D003D7924 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A5AC711B765D5D003D7924 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		B06FDE0E1B7652D500679570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B06FDE0F1B7652D500679570 /* grubby_worm_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grubby_worm_swiftTests.swift; sourceTree = "<group>"; };
 		B06FDE191B76557F00679570 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		B071920E1B77A4A900BD8457 /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
+		B07192101B77A4BC00BD8457 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		B0A5AC711B765D5D003D7924 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,8 @@
 		B06FDDF21B7652D500679570 /* grubby-worm-swift */ = {
 			isa = PBXGroup;
 			children = (
+				B07192101B77A4BC00BD8457 /* AppTheme.swift */,
+				B071920E1B77A4A900BD8457 /* DataStruct.swift */,
 				B0A5AC711B765D5D003D7924 /* GameScene.swift */,
 				B06FDE001B7652D500679570 /* Images.xcassets */,
 				B06FDDF31B7652D500679570 /* Supporting Files */,
@@ -162,11 +168,13 @@
 		B06FDDE81B7652D500679570 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = SWIFT.HOW;
 				TargetAttributes = {
 					B06FDDEF1B7652D500679570 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = UMQMHH9L4Q;
 					};
 					B06FDE081B7652D500679570 = {
 						CreatedOnToolsVersion = 6.4;
@@ -218,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B071920F1B77A4A900BD8457 /* DataStruct.swift in Sources */,
 				B06FDDFC1B7652D500679570 /* GameViewController.swift in Sources */,
 				B06FDE1A1B76557F00679570 /* README.md in Sources */,
+				B07192111B77A4BC00BD8457 /* AppTheme.swift in Sources */,
 				B0A5AC721B765D5D003D7924 /* GameScene.swift in Sources */,
 				B06FDDF61B7652D500679570 /* AppDelegate.swift in Sources */,
 			);
@@ -350,9 +360,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -360,9 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "grubby-worm-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
